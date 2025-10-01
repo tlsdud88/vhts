@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VHTS</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitVids.js"></script>
+    <script src="js/vhts.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div>
+            <div>
+                <input type="button" id="snbBtn" value="menuOpen" data-popup="snbPopup">
+                <label for="snbBtn">Menu</label>
+            </div>
+            <div id="snbPopup">
+                <div>
+                    <input type="button" id="closeBtn" value="close" class="material-symbols-outlined closeBtn">
+                    <label for="closeBtn">Close</label>
+                </div>
+                <ul>
+                    <li><a href="list_combatshirts_01.html">Combat Shirts</a></li>
+                    <li><a href="list_combatshorts_01.html">Combat Shorts</a></li>
+                    <li><a href="list_kimonos_01.html">Kimonos</a></li>
+                    <li><a href="list_apparel_01.html">Apparel</a></li>
+                    <li><a href="list_accessories_01.html">Accessories</a></li>
+                    <li><a href="custom.html">Custom</a></li>
+                    <li>
+                        <b>SPECIAL EDITION</b>
+                        <ol>
+                            <li><a href="list_nickyrod_01.html">Nicky Rod</a></li>
+                            <li><a href="list_anniversary.html">10th Anniversary</a></li>
+                            <li><a href="list_j_demsky.html">J. Demsky Collaboration</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="list_sale_01.html">SALE</a></li>
+                    <li><a href="thelook.html">THE LOOKS</a></li>
+                    <li><a href="ourstory.html">ABOUT</a></li>
+                </ul>
+            </div>
+            <h1>
+                <a href="index_after.html">
+                    <img src="images/logo.svg" alt="VHTS">
+                </a>
+            </h1>
+            <ul class="indexAfter">
+                <li><a href="account.html"><em>Account</em></a></li>
+                <li><a href="findstore.html"><em>Store</em></a></li>
+                <li>
+                    <input type="button" id="cartBtn" value="Cart" data-popup="cartPopup">
+                    <label for="cartBtn">Cart</label>
+                </li>
+            </ul>
+            <div id="cartPopup">
+                <input type="button" value="close" class="material-symbols-outlined closeBtn">
+                <h2>YOU HAVE 1 ITEM IN YOUR BASKET</h2>
+                <ol>
+                    <li>
+                        <input type="button" value="close" class="material-symbols-outlined deleteBtn">
+                        <a href="kimonos_02.html">
+                            <img src="images/kimonos_02.png" alt="BE WATER 2024 Special Edition 
+                            Kimono White">
+                        </a>
+                        <h3>
+                            BE WATER 2024 Special Edition Kimono White
+                            <em>Kimono</em>
+                        </h3>
+                        <strong>$189.00</strong>
+                    </li>
+                </ol>
+                <div>
+                    <span>
+                        Order Total
+                        <small>Tax incl.</small>
+                    </span>
+                    <strong>$189.00</strong>
+                </div>
+                <a href="basket.html">Go to basket</a>
+            </div>
+        </div>
+    </header>
+    <div class="ordersContainer">
+        <h2>Hi, sinyoung park</h2>
+        <ul>
+            <li><a href="account.html">OVERVIEW</a></li>
+            <li><a href="account_profile.html">MY PROFILE</a></li>
+            <li class="active">MY ORDERS</li>
+            <li><a href="account_address.html">MY ADDRESS</a></li>
+        </ul>
+        <div>
+            <ol>
+                <li>
+                    <a href="product_j_demsky_01.html">
+                        <img src="images/orders_img_01.png" alt="J. Demsky x VHTS collaboration short sleeves rash guard">
+                    </a>
+                    <ul>
+                        <li class="delivery out">out for delivery</li>
+                        <li><b>J. Demsky x VHTS collaboration short sleeves rash guard</b></li>
+                        <li>
+                            option : M
+                            <input type="hidden" name="option" value="M">
+                        </li>
+                        <li>
+                            purchase quantity : 1
+                            <input type="hidden" name="quantity" value="1">
+                        </li>
+                    </ul>
+                    <div>
+                        <input type="button" class="inquiryBtn" value="Delivery Inquiry" data-popup="delivery1Popup">
+                    </div>
+                </li>
+                <li>
+                    <a href="product_kimonos_13.html">
+                    <img src="images/orders_img_02.png" alt="10th Anniversary Combat shorts NOIR">
+                    </a>
+                    <ul>
+                        <li class="delivery completed">delivery completed</li>
+                        <li><b>10th Anniversary Combat shorts "NOIR"</b></li>
+                        <li>
+                            option : 3XL
+                            <input type="hidden" name="option" value="3XL">
+                        </li>
+                        <li>
+                            purchase quantity : 1
+                            <input type="hidden" name="quantity" value="1">
+                        </li>
+                    </ul>
+                    <div>
+                        <input type="button" class="inquiryBtn" value="Delivery Inquiry" data-popup="delivery2Popup">
+                        <input type="button" class="exchangeBtn" value="Exchange request" data-popup="exchangePopup">
+                        <input type="button" class="refundBtn" value="Refund request" data-popup="refundPopup">
+                        <input type="button" class="reviewBtn" value="Write a review" data-popup="reviewPanel">
+                    </div>
+                    <div id="reviewPanel">
+                        <div>
+                            <h3>Write a Review</h3>
+                            <div class="starCount">
+                                <input type="radio" name="starRaTing" id="star5" value="5">
+                                <label for="star5">5 stars</label>
+                                <input type="radio" name="starRaTing" id="star4" value="4">
+                                <label for="star4">4 stars</label>
+                                <input type="radio" name="starRaTing" id="star3" value="3">
+                                <label for="star3">3 stars</label>
+                                <input type="radio" name="starRaTing" id="star2" value="2">
+                                <label for="star2">2 stars</label>
+                                <input type="radio" name="starRaTing" id="star1" value="1">
+                                <label for="star1">1 stars</label>
+                            </div>
+                        </div>
+                        <div>
+                            <textarea placeholder="Review can be written after logging in."></textarea>
+                        </div>
+                        <div>
+                            <input type="button" value="Post Review">
+                            <input type="button" value="Cancel" class="closePanel">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_anniversary_02.html">
+                    <img src="images/orders_img_03.png" alt="10th Anniversary Combat shorts NOIR">
+                    </a>
+                    <ul>
+                        <li class="delivery completed">delivery completed</li>
+                        <li><b>10th Anniversary Combat shorts "NOIR"</b></li>
+                        <li>
+                            option : 3XL
+                            <input type="hidden" name="option" value="3XL">
+                        </li>
+                        <li>
+                            purchase quantity : 1
+                            <input type="hidden" name="quantity" value="1">
+                        </li>
+                    </ul>
+                    <div>
+                        <input type="button" class="inquiryBtn" value="Delivery Inquiry" data-popup="delivery3Popup">
+                    </div>
+                </li>
+            </ol>
+            <div id="delivery1Popup">
+                <input type="button" value="close" class="material-symbols-outlined closeBtn">
+                <h3>DELIVERY STATUS</h3>
+                <ol>
+                    <li>processed</li>
+                    <li>shipped</li>
+                    <li class="active">out for delivery</li>
+                    <li>completed</li>
+                </ol>
+                <ul>
+                    <li>
+                        <label for="orderTrac2">Tracking number</label>
+                        <input type="text" id="orderTrac2" value="3930326005" disabled>
+                    </li>
+                    <li>
+                        <label for="orderCompany2">Delivery company</label>
+                        <input type="text" id="orderCompany2" value="L logistecs" disabled>
+                    </li>
+                </ul>
+                <div>
+                    <h4>Delivery status detail</h4>
+                    <ol>
+                        <li>
+                            <time datetime="2025-02-26 13:22">2025-02-26 13:22</time>
+                            <span>processed</span>
+                        </li>
+                        <li>
+                            <time datetime="2025-02-26 19:22">2025-02-26 19:22</time>
+                            <span>shipped</span>
+                        </li>
+                        <li class="active">
+                            <time datetime="2025-02-27 07:22">2025-02-27 07:22</time>
+                            <span>out for delivery</span>
+                        </li>
+                        <li>completed</li>
+                    </ol>
+                </div>
+            </div>
+            <div id="delivery2Popup">
+                <input type="button" value="close" class="material-symbols-outlined closeBtn">
+                <h3>DELIVERY STATUS</h3>
+                <ol>
+                    <li>processed</li>
+                    <li>shipped</li>
+                    <li>out for delivery</li>
+                    <li class="active">completed</li>
+                </ol>
+                <ul>
+                    <li>
+                        <label for="orderTrac1">Tracking number</label>
+                        <input type="text" id="orderTrac1" value="3930326005" readonly>
+                    </li>
+                    <li>
+                        <label for="orderCompany1">Delivery company</label>
+                        <input type="text" id="orderCompany1" value="L logistecs" readonly>
+                    </li>
+                </ul>
+                <div>
+                    <h4>Delivery status detail</h4>
+                    <ol>
+                        <li>
+                            <time datetime="2025-02-25 10:10">2025-02-25 10:10</time>
+                            <span>processed</span>
+                        </li>
+                        <li>
+                            <time datetime="2025-02-25 19:22">2025-02-25 19:22</time>
+                            <span>shipped</span>
+                        </li>
+                        <li>
+                            <time datetime="2025-02-26 12:55">2025-02-26 12:55</time>
+                            <span>out for delivery</span>
+                        </li>
+                        <li>
+                            <time datetime="2025-02-26 18:30">2025-02-26 18:30</time>
+                            <span>completed</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div id="delivery3Popup">
+                <input type="button" value="close" class="material-symbols-outlined closeBtn">
+                <h3>DELIVERY STATUS</h3>
+                <ol>
+                    <li>processed</li>
+                    <li>shipped</li>
+                    <li>out for delivery</li>
+                    <li>completed</li>
+                </ol>
+                <ul>
+                    <li>
+                        <label for="orderTrac3">Tracking number</label>
+                        <input type="text" id="orderTrac3" value="3630557521">
+                    </li>
+                    <li>
+                        <label for="orderCompany3">Delivery company</label>
+                        <input type="text" id="orderCompany3" value="L logistecs">
+                    </li>
+                </ul>
+                <div>
+                    <h4>Delivery status detail</h4>
+                    <ol>
+                        <li>
+                            <time datetime="2024-12-03 18:10">2025-12-03 18:10</time>
+                            <span>processed</span>
+                        </li>
+                        <li>
+                            <time datetime="2025-12-04 03:50">2025-12-04 03:50</time>
+                            <span>shipped</span>
+                        </li>
+                        <li>
+                            <time datetime="2025-12-04 07:43">2025-12-04 07:46</time>
+                            <span>out for delivery</span>
+                        </li>
+                        <li>
+                            <time datetime="2025-12-04 17:25">2025-12-04 17:25</time>
+                            <span>completed</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>        
+            <div id="exchangePopup">
+                <input type="button" value="close" class="material-symbols-outlined closeBtn">
+                <h3>EXCHANGE REQUEST</h3>
+                <ul>
+                    <li class="orderTittle">
+                        <span>Product</span>
+                        <span>Quantity</span>
+                        <span>Amount</span>
+                    </li>                    
+                    <li>
+                        <div>
+                            <input type="checkbox" id="exchangeCheck">
+                            <img src="images/request_img_01.png" alt="VHTS COMP STANDARD LIGHT KIMONO BLACK Diamond weave">
+                            <label for="exchangeCheck">VHTS COMP STANDARD LIGHT KIMONO BLACK Diamond weave</label>
+                        </div>
+                        <select id="exproductQty">
+                            <option>1</option>
+                        </select>      
+                        <strong>$ 150.00</strong>                  
+                    </li>
+                </ul>
+                <div>
+                    <h3>Reasons for exchange</h3>
+                    <div>
+                        <label for="exchangeReasons">Reasons</label>
+                        <select id="exchangeReasons">
+                            <option>Reason for exchange *</option>
+                            <option>Simple change of mind</option>
+                            <option>Product defect</option>
+                            <option>Wrong delivery</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <h3>Pick-up address</h3>
+                    <ul class="pickupMenu">
+                        <li data-name="exOption" class="activ">last delivery address</li>
+                        <li data-name="exAdd">Direct input</li>
+                    </ul>
+                </div>
+                <address id="exOption" class="pickupTab activ">
+                    <strong>home</strong>
+                    21378
+                    <span>#3-1513, 39, Buheung-ro 243beon-gil, Bupyeong-gu, Incheon, Republic of Korea</span>
+                    010-6690-6506
+                </address>
+                <div id="exAdd" class="pickupTab">
+                    <input type="text" placeholder="Please enter your address *">
+                    <input type="tel" placeholder="Phon Number * ">
+                    <input type="button" value="SAVE">
+                </div>
+                <input type="submit" value="Request">
+                <input type="reset" value="Cancel">
+            </div>
+            <div id="refundPopup">
+                <input type="button" value="close" class="material-symbols-outlined closeBtn">
+                <h3>REFUND REQUEST</h3>
+                <ul>
+                    <li class="orderTittle">
+                        <span>Product</span>
+                        <span>Quantity</span>
+                        <span>Amount</span>
+                    </li>                    
+                    <li>
+                        <div>
+                            <input type="checkbox" id="refundCheck">
+                            <img src="images/request_img_01.png" alt="VHTS COMP STANDARD LIGHT KIMONO BLACK Diamond weave">
+                            <label for="refundCheck">VHTS COMP STANDARD LIGHT KIMONO BLACK Diamond weave</label>
+                        </div>
+                        <select id="reproductQty">
+                            <option>1</option>
+                        </select>      
+                        <strong>$ 150.00</strong>                  
+                    </li>
+                </ul>
+                <div>
+                    <h3>Reasons for refund</h3>
+                    <div>
+                        <label for="refundReasons">Reasons</label>
+                        <select id="refundReasons">
+                            <option>Reason for refund *</option>
+                            <option>Simple remorse</option>
+                            <option>Quality dissatisfaction</option>
+                            <option>Wrong delivery</option>
+                            <option>Delivery delay</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <h3>Pick-up address</h3>
+                    <ul class="pickupMenu">
+                        <li data-name="reOption" class="activ">last delivery address</li>
+                        <li data-name="reAdd">Direct input</li>
+                    </ul>
+                </div>
+                <address id="reOption"  class="repickupTab activ">
+                    <strong>home</strong>
+                    21378
+                    <span>#3-1513, 39, Buheung-ro 243beon-gil, Bupyeong-gu, Incheon, Republic of Korea</span>
+                    010-6690-6506
+                </address>
+                <div id="reAdd" class="pickupTab">
+                    <input type="text" placeholder="Please enter your address *">
+                    <input type="tel" placeholder="Phon Number * ">
+                    <input type="button" value="SAVE">
+                </div>
+                <input type="submit" value="Request">
+                <input type="reset" value="Cancel">
+            </div>
+        </div>
+        <a href="index.html">Log Out</a>
+    </div>
+   <footer>
+        <div>
+            <img src="images/footer_img.png" alt="choosing a drink">
+            <div>
+                <h3>
+                    <small>VERY HARD TO SUBMIT</small>
+                    Join our global community for exclusive benefits and news about
+                </h3>
+                <ul>
+                    <li>New &amp; limited products</li>
+                    <li>Exclusive events</li>
+                    <li>Personalised content</li>
+                    <li>Special offers</li>
+                    <li>Behind the scenes</li>
+                </ul>
+            </div>
+        </div>
+        <div id="sizePopup">
+            <input type="button" value="close" class="material-symbols-outlined closeBtn">
+            <h3>SIZE CHART</h3>
+            <table>
+                <caption>REGULAR</caption>
+                <thead>
+                    <tr>
+                        <th>SIZE</th>
+                        <th>WEIGHT(LBS)</th>
+                        <th>HEIGHT(FT)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>A00</td><td>90 - 105</td><td>4'5" - 5'0"</td></tr>
+                    <tr><td>A1</td><td>105 - 135</td><td>5'0" - 5'5"</td></tr>
+                    <tr><td>A2</td><td>135 - 170</td><td>5'5" - 5'8"</td></tr>
+                    <tr><td>A3</td><td>170 - 190</td><td>5'8" - 6'0"</td></tr>
+                    <tr><td>A0</td><td>190 - 230</td><td>5'11" - 6'2"</td></tr>
+                    <tr><td>A4</td><td>220 - 260</td><td>6'2" - 6'5"</td></tr>
+                    <tr><td>A5</td><td>250 - 280</td><td>6'3" - 6'6"</td></tr>
+                    <tr><td>F1</td><td>105 - 135</td><td>5'0" - 5'5"</td></tr>
+                    <tr><td>F2</td><td>135 - 170</td><td>5'5" - 5'8"</td></tr>
+                    <tr><td>F3</td><td>170 - 190</td><td>5'8" - 6'0"</td></tr>
+                </tbody>
+            </table>
+            <div class="centerGroup">
+                <table>
+                    <caption>FITTED</caption>
+                    <thead>
+                        <tr>
+                            <th>SIZE</th>
+                            <th>WEIGHT(LBS)</th>
+                            <th>HEIGHT(FT)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>A0F</td><td>90 - 115</td><td>5'0" - 5'5"</td></tr>
+                        <tr><td>A1F</td><td>105 - 150</td><td>5'5" - 5'8"</td></tr>
+                        <tr><td>A2F</td><td>140 - 180</td><td>5'7" - 5'11"</td></tr>
+                    </tbody>
+                </table>
+                <table>
+                    <caption>TALL</caption>
+                    <thead>
+                        <tr>
+                            <th>SIZE</th>
+                            <th>WEIGHT(LBS)</th>
+                            <th>HEIGHT(FT)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>A1T</td><td>130 - 175</td><td>5'8" - 6'0"</td></tr>
+                        <tr><td>A2T</td><td>175 - 200</td><td>5'11" - 6'2"</td></tr>
+                        <tr><td>A3T</td><td>195 - 240</td><td>6'2" - 6'5"</td></tr>
+                    </tbody>
+                </table>
+                <table>
+                    <caption>HUSKY</caption>
+                    <thead>
+                        <tr>
+                            <th>SIZE</th>
+                            <th>WEIGHT(LBS)</th>
+                            <th>HEIGHT(FT)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>A0H</td><td>150 - 180</td><td>5'0" - 5'6"</td></tr>
+                        <tr><td>A1H</td><td>180 - 200</td><td>5'5" - 5'8"</td></tr>
+                        <tr><td>A2H</td><td>190 - 235</td><td>5'8" - 6'0"</td></tr>
+                        <tr><td>A3H</td><td>225 - 265</td><td>5'11" - 6'2"</td></tr>
+                    </tbody>
+                </table>
+            </div>            
+            <table>
+                <caption>KID</caption>
+                <thead>
+                    <tr>
+                        <th>SIZE</th>
+                        <th>WEIGHT(LBS)</th>
+                        <th>HEIGHT(FT)</th>
+                        <th>AGE(YRS)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>M00</td><td>35 - 45</td><td>3'1" - 3'4"</td><td>3 - 4</td></tr>
+                    <tr><td>M0</td><td>40 - 55</td><td>3'5" - 3'9"</td><td>4 - 6</td></tr>
+                    <tr><td>M1</td><td>50 - 65</td><td>3'10" - 4'2"</td><td>6 - 8</td></tr>
+                    <tr><td>M2</td><td>60 - 85</td><td>4'2" - 4'7"</td><td>8 - 10</td></tr>
+                    <tr><td>M3</td><td>85 - 100</td><td>4'7" - 4'10"</td><td>10 - 12</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="returnsPopup">
+            <input type="button" value="close" class="material-symbols-outlined closeBtn">
+            <h3>RETURNS</h3>
+            <p>We accept Returns and Exchanges within 20 days after receiving the products. 
+                Returned item must be in unused, unwashed, and clean condition.
+                We provide refund only when the returned item is in sellable condition (unused and unwashed) with an original tag.
+                The refund will take 3 - 4 business days appearing on customer's account. 
+                Please note: with Squarespace's new refund regulation, there will be a 3.2% deduction for any
+                amount of refund inside the US transactions and 4.5% for the international transactions. 
+            </p>
+            <p>
+                When a customer wants to exchange with other item, there will be a $10 exchange fee (plus one way shipping)
+                applied unless the item has a defect or the reason for the exchange occurred following our instruction and guidance.
+                With an exception for first time customers, we can waive the exchange fee. Returning shipping fee is solely dependent upon 
+                customers. 
+            </p>
+            <p>
+                We have to let go a particular customer when returning rate is over 80% and each case based on case by case basis.
+            </p>
+            <p>
+                Lastly, We are not responsible for stolen cases or lost if the recipient’s address does not have the correct information,
+                secure mail room or P.O.Box or whatsover.
+            </p>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <h3>EXPLORE</h3>
+                    <ul>
+                        <li><input type="button" id="sizeBtn" value="size guide" data-popup="sizePopup"></li>
+                        <li><input type="button" id="returnsBtn" value="returns" data-popup="returnsPopup"></li>
+                        <li><a href="stockist.html">stockist</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>HELP</h3>
+                    <ul>
+                        <li><a href="termsofuse.html">terms of use</a></li>
+                        <li><a href="privacypolicy.html">privacy policy</a></li>
+                        <li><a href="cookiepolicy.html">cookie policy</a></li>
+                        <li><a href="FAQ.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>FOLLOW</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/vhtsny/" target="_blank">Instagram</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                </div>
+            </div>    
+            <h2>
+                <img src="images/logo.svg" alt="VHTS">
+            </h2>
+            <div>
+                <form>
+                    <div id="subscribePopup">
+                        <input type="button" value="close" class="material-symbols-outlined closeBtn">
+                        <strong>Thank you for joining us</strong>
+                        <p>A little welcome confirmation is on its way</p>
+                        <a href="index.html">Go to home page</a>
+                    </div>
+                    <ul>
+                        <li>
+                            <label for="userEmail">Email</label>
+                            <input type="Email" id="userEmail" required>
+                        </li>
+                        <li>
+                            <label for="userFname">First name</label>
+                            <input type="text" id="userFname" required>
+                        </li>
+                        <li>
+                            <label for="userLname">Last name</label>
+                            <input type="text" id="userLname" required>
+                        </li>
+                    </ul>
+                    <p>
+                        I accept that VHTS can contact me via digital communication, including email with personalized marketing of our products and events in 
+                        VHTS shops. Unsubscribing is possible at any time. Details on how 
+                        personal data is processed: <a href="privacypolicy.html">privacy policy.</a>
+                    </p>
+                    <p>
+                        This site is protected by reCAPTCHA and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+                    </p>
+                    <input type="submit" value="Subscribe">
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

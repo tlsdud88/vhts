@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VHTS</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitVids.js"></script>
+    <script src="js/vhts.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div>
+            <div>
+                <input type="button" id="snbBtn" value="menuOpen" data-popup="snbPopup">
+                <label for="snbBtn">Menu</label>
+            </div>
+            <div id="snbPopup">
+                <div>
+                    <input type="button" id="closeBtn" value="close" class="material-symbols-outlined closeBtn">
+                    <label for="closeBtn">Close</label>
+                </div>
+                <ul>
+                    <li><a href="list_combatshirts_01.html">Combat Shirts</a></li>
+                    <li><a href="list_combatshorts_01.html">Combat Shorts</a></li>
+                    <li><a href="list_kimonos_01.html">Kimonos</a></li>
+                    <li><a href="list_apparel_01.html">Apparel</a></li>
+                    <li><a href="list_accessories_01.html">Accessories</a></li>
+                    <li><a href="custom.html">Custom</a></li>
+                    <li>
+                        <b>SPECIAL EDITION</b>
+                        <ol>
+                            <li><a href="list_nickyrod_01.html">Nicky Rod</a></li>
+                            <li><a href="list_anniversary.html">10th Anniversary</a></li>
+                            <li><a href="list_j_demsky.html">J. Demsky Collaboration</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="list_sale_01.html">SALE</a></li>
+                    <li><a href="thelook.html">THE LOOKS</a></li>
+                    <li><a href="ourstory.html">ABOUT</a></li>
+                </ul>
+            </div>
+            <h1>
+                <a href="index_after.html">
+                    <img src="images/logo.svg" alt="VHTS">
+                </a>
+            </h1>
+            <ul class="indexAfter">
+                <li><a href="account.html"><em>Account</em></a></li>
+                <li><a href="findstore.html"><em>Store</em></a></li>
+                <li>
+                    <input type="button" id="cartBtn" value="Cart" data-popup="cartPopup">
+                    <label for="cartBtn">Cart</label>
+                </li>
+            </ul>
+            <div id="cartPopup">
+                <input type="button" value="close" class="material-symbols-outlined closeBtn">
+                <h2>YOU HAVE 1 ITEM IN YOUR BASKET</h2>
+                <ol>
+                    <li>
+                        <input type="button" value="close" class="material-symbols-outlined deleteBtn">
+                        <a href="kimonos_02.html">
+                            <img src="images/kimonos_02.png" alt="BE WATER 2024 Special Edition 
+                            Kimono White">
+                        </a>
+                        <h3>
+                            BE WATER 2024 Special Edition Kimono White
+                            <em>Kimono</em>
+                        </h3>
+                        <strong>$189.00</strong>
+                    </li>
+                </ol>
+                <div>
+                    <span>
+                        Order Total
+                        <small>Tax incl.</small>
+                    </span>
+                    <strong>$189.00</strong>
+                </div>
+                <a href="basket.html">Go to basket</a>
+            </div>
+        </div>
+    </header> 
+    <section class="listContainer">
+        <h2>
+            Sale
+            <small>(03)</small>
+        </h2>
+        <ol>
+            <li><a href="list_sale_01.html">ALL</a></li>
+            <li><a href="list_sale_bjj_01.html">BJJ</a></li>
+            <li><a href="list_sale_kimono_01.html">KIMONO</a></li>
+            <li class="active">ACC</li>
+        </ol>
+        <div>
+            <input type="button" id="filterBtn" value="Filter" data-popup="filterPopup">
+            <form id="filterPopup">
+                <ol>
+                    <li class="filterPrice">
+                        <h3>PRICE</h3>
+                        <div>
+                            <input type="range" min="0" max="999" value="999" step="1" name="priceRange">
+                            <div>
+                                <span>$0.00</span>
+                                <span>$999.00</span>
+                            </div>
+                        </div>               
+                    </li>
+                    <li class="filterSize">
+                        <h3>SIZE</h3>
+                        <div>
+                            <input type="checkbox" id="size_op1" name="size" value="XS">
+                            <label for="size_op1">XS</label>
+                            <input type="checkbox" id="size_op2" name="size" value="S">
+                            <label for="size_op2">S</label>
+                            <input type="checkbox" id="size_op3" name="size" value="M">
+                            <label for="size_op3">M</label>
+                            <input type="checkbox" id="size_op4" name="size" value="L">
+                            <label for="size_op4">L</label>
+                            <input type="checkbox" id="size_op5" name="size" value="XL">
+                            <label for="size_op5">XL</label>
+                            <input type="checkbox" id="size_op6" name="size" value="2XL">
+                            <label for="size_op6">2XL</label>
+                            <input type="checkbox" id="size_op7" name="size" value="3XL">
+                            <label for="size_op7">3XL</label>
+                            <input type="checkbox" id="size_op8" name="size" value="FXS">
+                            <label for="size_op8">FXS</label>
+                            <input type="checkbox" id="size_op9" name="size" value="FS">
+                            <label for="size_op9">FS</label>
+                            <input type="checkbox" id="size_op10" name="size" value="FM">
+                            <label for="size_op10">FM</label>
+                            <input type="checkbox" id="size_op11" name="size" value="FL">
+                            <label for="size_op11">FL</label>
+                            <input type="checkbox" id="size_op12" name="size" value="F1">
+                            <label for="size_op12">F1</label>
+                            <input type="checkbox" id="size_op13" name="size" value="F2">
+                            <label for="size_op13">F2</label>
+                            <input type="checkbox" id="size_op14" name="size" value="F3">
+                            <label for="size_op14">F3</label>                    
+                            <input type="checkbox" id="size_op15" name="size" value="A00">
+                            <label for="size_op15">A00</label>
+                            <input type="checkbox" id="size_op16" name="size" value="A0">
+                            <label for="size_op16">A0</label>
+                            <input type="checkbox" id="size_op17" name="size" value="A1">
+                            <label for="size_op17">A1</label>
+                            <input type="checkbox" id="size_op18" name="size" value="A2">
+                            <label for="size_op18">A2</label>
+                            <input type="checkbox" id="size_op19" name="size" value="A3">
+                            <label for="size_op19">A3</label>
+                            <input type="checkbox" id="size_op20" name="size" value="A4">
+                            <label for="size_op20">A4</label>
+                            <input type="checkbox" id="size_op21" name="size" value="A5">
+                            <label for="size_op21">A5</label>
+                            <input type="checkbox" id="size_op22" name="size" value="A0F">
+                            <label for="size_op22">A0F</label>
+                            <input type="checkbox" id="size_op23" name="size" value="A1F">
+                            <label for="size_op23">A1F</label>
+                            <input type="checkbox" id="size_op24" name="size" value="A2F">
+                            <label for="size_op24">A2F</label>
+                            <input type="checkbox" id="size_op25" name="size" value="A0H">
+                            <label for="size_op25">A0H</label>
+                            <input type="checkbox" id="size_op26" name="size" value="A1H">
+                            <label for="size_op26">A1H</label>
+                            <input type="checkbox" id="size_op27" name="size" value="A2H">
+                            <label for="size_op27">A2H</label>
+                            <input type="checkbox" id="size_op28" name="size" value="A3H">
+                            <label for="size_op28">A3H</label>
+                            <input type="checkbox" id="size_op29" name="size" value="A1T">
+                            <label for="size_op29">A1T</label>
+                            <input type="checkbox" id="size_op30" name="size" value="A2T">
+                            <label for="size_op30">A2T</label>
+                            <input type="checkbox" id="size_op31" name="size" value="A3T">
+                            <label for="size_op31">A3T</label>
+                        </div>
+                    </li>
+                    <li class="filterSleeves">
+                        <h3>SLEEVES</h3>
+                        <div>
+                            <input type="checkbox" id="sleeves_op1" name="sleeves" value="ShortSleeves">
+                            <label for="sleeves_op1">Short Sleeves</label>
+                            <input type="checkbox" id="sleeves_op2" name="sleeves" value="longSleeves">
+                            <label for="sleeves_op2">Long Sleeves</label>
+                        </div>
+                    </li>
+                </ol>
+                <div>
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Apply">
+                </div>
+            </form>
+        </div>
+        <ul>
+            <li>
+                <a href="product_sale_31.html">
+                    <img src="images/list_sale_31.png" alt="MEA – SLIDE">
+                </a>
+                <div>
+                    <h4>MEA – SLIDE</h4>
+                    <ol>
+                        <li class="colorBlack">Black</li>
+                        <li class="colorWhite">White</li>
+                    </ol>
+                    <strong><small>from </small>$15.00</strong>
+                </div>
+            </li>
+            <li>
+                <a href="product_sale_32.html">
+                    <img src="images/list_sale_32.png" alt="4 PANEL TECH HAT">
+                </a>
+                <div>
+                    <h4>4 PANEL TECH HAT</h4>
+                    <ol>
+                        <li class="colorBlack">Black</li>
+                        <li class="colorGreen">Green</li>
+                    </ol>
+                    <strong><small>from </small>$15.00</strong>
+                </div>
+            </li>
+            <li>
+                <a href="product_sale_33.html">
+                    <img src="images/list_sale_33.png" alt="VHTS TRIANGLE LOGO NYLON HAT">
+                </a>
+                <div>
+                    <h4>VHTS TRIANGLE LOGO NYLON HAT</h4>
+                    <ol>
+                        <li class="colorBlack">Black</li>
+                        <li class="colorLightgrey">Light Grey</li>
+                    </ol>
+                    <strong><small>from </small>$15.00</strong>
+                </div>
+            </li>
+        </ul>
+        <div class="pager">
+            <ol>
+                <li class="active">1</li>
+            </ol>
+        </div>
+    </section>
+   <footer>
+        <div>
+            <img src="images/footer_img.png" alt="choosing a drink">
+            <div>
+                <h3>
+                    <small>VERY HARD TO SUBMIT</small>
+                    Join our global community for exclusive benefits and news about
+                </h3>
+                <ul>
+                    <li>New &amp; limited products</li>
+                    <li>Exclusive events</li>
+                    <li>Personalised content</li>
+                    <li>Special offers</li>
+                    <li>Behind the scenes</li>
+                </ul>
+            </div>
+        </div>
+        <div id="sizePopup">
+            <input type="button" value="close" class="material-symbols-outlined closeBtn">
+            <h3>SIZE CHART</h3>
+            <table>
+                <caption>REGULAR</caption>
+                <thead>
+                    <tr>
+                        <th>SIZE</th>
+                        <th>WEIGHT(LBS)</th>
+                        <th>HEIGHT(FT)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>A00</td><td>90 - 105</td><td>4'5" - 5'0"</td></tr>
+                    <tr><td>A1</td><td>105 - 135</td><td>5'0" - 5'5"</td></tr>
+                    <tr><td>A2</td><td>135 - 170</td><td>5'5" - 5'8"</td></tr>
+                    <tr><td>A3</td><td>170 - 190</td><td>5'8" - 6'0"</td></tr>
+                    <tr><td>A0</td><td>190 - 230</td><td>5'11" - 6'2"</td></tr>
+                    <tr><td>A4</td><td>220 - 260</td><td>6'2" - 6'5"</td></tr>
+                    <tr><td>A5</td><td>250 - 280</td><td>6'3" - 6'6"</td></tr>
+                    <tr><td>F1</td><td>105 - 135</td><td>5'0" - 5'5"</td></tr>
+                    <tr><td>F2</td><td>135 - 170</td><td>5'5" - 5'8"</td></tr>
+                    <tr><td>F3</td><td>170 - 190</td><td>5'8" - 6'0"</td></tr>
+                </tbody>
+            </table>
+            <div class="centerGroup">
+                <table>
+                    <caption>FITTED</caption>
+                    <thead>
+                        <tr>
+                            <th>SIZE</th>
+                            <th>WEIGHT(LBS)</th>
+                            <th>HEIGHT(FT)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>A0F</td><td>90 - 115</td><td>5'0" - 5'5"</td></tr>
+                        <tr><td>A1F</td><td>105 - 150</td><td>5'5" - 5'8"</td></tr>
+                        <tr><td>A2F</td><td>140 - 180</td><td>5'7" - 5'11"</td></tr>
+                    </tbody>
+                </table>
+                <table>
+                    <caption>TALL</caption>
+                    <thead>
+                        <tr>
+                            <th>SIZE</th>
+                            <th>WEIGHT(LBS)</th>
+                            <th>HEIGHT(FT)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>A1T</td><td>130 - 175</td><td>5'8" - 6'0"</td></tr>
+                        <tr><td>A2T</td><td>175 - 200</td><td>5'11" - 6'2"</td></tr>
+                        <tr><td>A3T</td><td>195 - 240</td><td>6'2" - 6'5"</td></tr>
+                    </tbody>
+                </table>
+                <table>
+                    <caption>HUSKY</caption>
+                    <thead>
+                        <tr>
+                            <th>SIZE</th>
+                            <th>WEIGHT(LBS)</th>
+                            <th>HEIGHT(FT)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>A0H</td><td>150 - 180</td><td>5'0" - 5'6"</td></tr>
+                        <tr><td>A1H</td><td>180 - 200</td><td>5'5" - 5'8"</td></tr>
+                        <tr><td>A2H</td><td>190 - 235</td><td>5'8" - 6'0"</td></tr>
+                        <tr><td>A3H</td><td>225 - 265</td><td>5'11" - 6'2"</td></tr>
+                    </tbody>
+                </table>
+            </div>            
+            <table>
+                <caption>KID</caption>
+                <thead>
+                    <tr>
+                        <th>SIZE</th>
+                        <th>WEIGHT(LBS)</th>
+                        <th>HEIGHT(FT)</th>
+                        <th>AGE(YRS)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>M00</td><td>35 - 45</td><td>3'1" - 3'4"</td><td>3 - 4</td></tr>
+                    <tr><td>M0</td><td>40 - 55</td><td>3'5" - 3'9"</td><td>4 - 6</td></tr>
+                    <tr><td>M1</td><td>50 - 65</td><td>3'10" - 4'2"</td><td>6 - 8</td></tr>
+                    <tr><td>M2</td><td>60 - 85</td><td>4'2" - 4'7"</td><td>8 - 10</td></tr>
+                    <tr><td>M3</td><td>85 - 100</td><td>4'7" - 4'10"</td><td>10 - 12</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="returnsPopup">
+            <input type="button" value="close" class="material-symbols-outlined closeBtn">
+            <h3>RETURNS</h3>
+            <p>We accept Returns and Exchanges within 20 days after receiving the products. 
+                Returned item must be in unused, unwashed, and clean condition.
+                We provide refund only when the returned item is in sellable condition (unused and unwashed) with an original tag.
+                The refund will take 3 - 4 business days appearing on customer's account. 
+                Please note: with Squarespace's new refund regulation, there will be a 3.2% deduction for any
+                amount of refund inside the US transactions and 4.5% for the international transactions. 
+            </p>
+            <p>
+                When a customer wants to exchange with other item, there will be a $10 exchange fee (plus one way shipping)
+                applied unless the item has a defect or the reason for the exchange occurred following our instruction and guidance.
+                With an exception for first time customers, we can waive the exchange fee. Returning shipping fee is solely dependent upon 
+                customers. 
+            </p>
+            <p>
+                We have to let go a particular customer when returning rate is over 80% and each case based on case by case basis.
+            </p>
+            <p>
+                Lastly, We are not responsible for stolen cases or lost if the recipient’s address does not have the correct information,
+                secure mail room or P.O.Box or whatsover.
+            </p>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <h3>EXPLORE</h3>
+                    <ul>
+                        <li><input type="button" id="sizeBtn" value="size guide" data-popup="sizePopup"></li>
+                        <li><input type="button" id="returnsBtn" value="returns" data-popup="returnsPopup"></li>
+                        <li><a href="stockist.html">stockist</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>HELP</h3>
+                    <ul>
+                        <li><a href="termsofuse.html">terms of use</a></li>
+                        <li><a href="privacypolicy.html">privacy policy</a></li>
+                        <li><a href="cookiepolicy.html">cookie policy</a></li>
+                        <li><a href="FAQ.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>FOLLOW</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/vhtsny/" target="_blank">Instagram</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                </div>
+            </div>    
+            <h2>
+                <img src="images/logo.svg" alt="VHTS">
+            </h2>
+            <div>
+                <form>
+                    <div id="subscribePopup">
+                        <input type="button" value="close" class="material-symbols-outlined deleteBtn">
+                        <strong>Thank you for joining us</strong>
+                        <p>A little welcome confirmation is on its way</p>
+                        <a href="index.html">Go to home page</a>
+                    </div>
+                    <ul>
+                        <li>
+                            <label for="userEmail">Email</label>
+                            <input type="Email" id="userEmail" required>
+                        </li>
+                        <li>
+                            <label for="userFname">First name</label>
+                            <input type="text" id="userFname" required>
+                        </li>
+                        <li>
+                            <label for="userLname">Last name</label>
+                            <input type="text" id="userLname" required>
+                        </li>
+                    </ul>
+                    <p>
+                        I accept that VHTS can contact me via digital communication, including email with personalized marketing of our products and events in 
+                        VHTS shops. Unsubscribing is possible at any time. Details on how 
+                        personal data is processed: <a href="privacypolicy.html">privacy policy.</a>
+                    </p>
+                    <p>
+                        This site is protected by reCAPTCHA and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+                    </p>
+                    <input type="submit" value="Subscribe">
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

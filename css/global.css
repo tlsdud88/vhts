@@ -1,0 +1,1326 @@
+header,
+input,
+.indexContainer,
+.listContainer,
+.detailSlider,
+.detailContainer,
+.signContainer,
+.overviewContainer,
+.profileContainer,
+.ordersContainer,
+textarea,
+.addressContainer,
+.basketContainer,
+.purchaseContainer,
+.confirmContainer,
+.customContainer,
+.findstoreContainer,
+.ourstoryContainer,
+.thelooksContainer,
+.thelookskimonoContainer,
+.thelook10thContainer,
+.thelooksJDContainer,
+.termsContainer,
+.privacyContainer,
+.cookieContainer,
+.faqContainer,
+.stockistContainer,
+.contactContainer,
+footer{
+    font-family: 'Outfit';
+}
+.listContainer h4 b,
+.detailContainer em{
+    font-family: 'Noto Sans TC';
+}
+
+a{
+    text-decoration: none;
+}
+[type='button'],
+[type='submit']{
+    cursor: pointer;
+}
+[id$='Popup'],
+[id$='Panel']{
+    display: none;
+}
+[id$='Popup'].active,
+[id$='Panel'].active{
+    display: block;
+}
+
+/* 모바일 */
+@media screen and (max-width: 767px){
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"]{
+    -webkit-appearance: none; border-radius: 0px;
+}
+header > div,
+footer > div{
+    margin: 0 auto; 
+}
+header{
+    position: fixed; background-color: #fff; padding: 10px 0; z-index: 1000;
+    top: 0; left: 0; width: 100%; margin: 0 auto;
+}
+header > div{
+    position: relative; box-sizing: border-box; height: 44px;
+}
+header > div > div:first-of-type{
+   height: 41px; position: absolute; top: 0; left: 3%;
+}
+header input#snbBtn{
+    font-size: 18px; color: #000; width: 20%; line-height: 44px; margin: 0; padding: 0; z-index: 1000;
+}
+header input#snbBtn{
+    background: url(../images/icon_menu.svg) right center no-repeat; border: none; text-indent: -9999px; width: 20px;
+}
+header label[for="snbBtn"]{
+    display: none;
+}
+header h1 {
+    position: absolute; width: 20%; top: 0; left: 40%; right: 40%; text-align: center;
+}
+header h1 a{
+    display: inline-block;
+}
+header h1 a img{
+    display: block; margin: 0 auto; width: 56px;
+}
+header > div > ul.indexAfter,
+header > div > ul.indexLogin{
+    list-style: none; position: absolute; top: 11px; right: 3%;
+}
+header > div > ul.indexAfter li,
+header > div > ul.indexLogin li{
+    position: relative; display: inline-block; vertical-align: middle; 
+}
+header > div > ul.indexAfter li:not(:last-child),
+header > div > ul.indexLogin li:not(:last-child){
+    margin-right: 10px;
+}
+
+header > div > ul.indexAfter li a,
+header > div > ul.indexLogin li a,
+header > div > ul.indexAfter li input#cartBtn,
+header > div > ul.indexLogin li input#cartBtn{
+    display: block; background: center no-repeat; width: 22px; height: 22px;
+}
+header > div > ul.indexLogin li a[href="account_login.html"]{
+    background-image: url(../images/icon_acc.svg); background-size: 22px;
+}
+header > div > ul.indexAfter li a[href="account.html"]{
+    background-image: url(../images/icon_acc_after.svg); background-size: 22px;
+}
+header > div > ul.indexAfter li a[href="findstore.html"],
+header > div > ul.indexLogin li a[href="findstore.html"]{
+    background-image: url(../images/icon_map.svg); background-size: 22px;
+}
+header > div > ul.indexAfter li input#cartBtn{
+    background-image: url(../images/icon_cart_after.svg); background-size: 22px; border: none; text-indent: -9999px; padding: 0;
+}
+header > div > ul.indexLogin li input#cartBtn{
+    background-image: url(../images/icon_cart.svg); background-size: 22px; border: none; text-indent: -9999px; padding: 0;
+}
+header > div > ul.indexAfter li a em,
+header > div > ul.indexAfter li label[for="cartBtn"],
+header > div > ul.indexLogin li a em,
+header > div > ul.indexLogin li label[for="cartBtn"]{
+    display: none;
+}
+
+#snbPopup,
+#snbPopup *,
+#cartPopup,
+#sizePopup,
+#returnsPopup{
+    line-height: normal; vertical-align: baseline; text-align: left; 
+}
+.closeBtn,
+.deleteBtn{
+    background-color: transparent; border: none; position: absolute;
+}
+#snbPopup{
+    background-color: white; position: fixed; width: 100%; height: 100%; top: 0; z-index: 1000; padding: 80px 45px 50px 0; box-shadow: 0 3px 10px 0 black; box-sizing: border-box;
+}
+#snbPopup .closeBtn,
+#snbPopup label[for="closeBtn"]{
+   position: absolute; top: 50px; color: black;
+}
+#snbPopup .closeBtn{
+    right: 105px; font-size: 24x; padding: 0;
+}
+#snbPopup label[for="closeBtn"]{
+    right: 45px; font-size: 22px; 
+}
+#snbPopup ul{
+    margin: 45px 45px 0; text-align: center;
+}
+#snbPopup li:not(:last-child){
+    padding-bottom: 30px;
+}
+#snbPopup ol{
+    margin-top: 30px;
+}
+#snbPopup ol li:last-child {
+  padding-bottom: 0;
+}
+#snbPopup li a,
+#snbPopup li b{
+    color: black; font-size: 18px; font-weight: 500;
+}
+#snbPopup li a:hover,
+#snbPopup li b:hover{
+    text-decoration: underline;
+}
+#snbPopup li b{
+    display: block; width: 100%; background: url(../images/icon_add.svg) right center no-repeat; padding-right: 65px; 
+}
+#snbPopup li b + ol{
+    display: none;
+}
+#snbPopup li b.active{
+background: url(../images/icon_remove.svg) right center no-repeat; 
+}
+#snbPopup li b.active + ul{
+    display: block;
+}
+#cartPopup{
+    background-color: white; position: absolute; right: 3%; top: 32px; width: 94%;
+    box-shadow: 3px 3px 10px black; z-index: 100; padding: 0 10px; box-sizing: border-box;
+}
+#cartPopup .closeBtn,
+#cartPopup .deleteBtn{
+    border: none; background-color: transparent; font-size: 18px; margin: 0; padding: 0; color: #000;
+}
+#cartPopup .closeBtn{
+    position: absolute; right: 0; top: 0; margin: 10px 10px 0 0; font-size: 20px;
+}
+#cartPopup .deleteBtn{
+    position: absolute; right: -5px; top: -5px; font-size: 18px;
+}
+#cartPopup h2,
+#cartPopup h3{
+    font-size: 12px; font-weight: 400;
+}
+#cartPopup h2{     
+    padding: 25px 0 10px;
+}
+#cartPopup ol:after{
+    content: ''; display: block; clear: both;
+}
+#cartPopup ol{
+    background-color: #f2f2f2; padding: 10px; margin-bottom: 80px; border-bottom: 1px solid #f2f2f2;
+}
+#cartPopup ol li{
+    list-style: none; position: relative;
+}
+#cartPopup ol li a{
+    float: left; padding-right: 20px;
+}
+#cartPopup ol li h3{
+    padding-top: 10px; line-height: 16px; padding: 0 10px 15px 0;
+}
+#cartPopup ol li h3 em{
+    font-style: normal; font-size: 12px; font-weight: 300; display: block;
+    padding-top: 10px;
+}
+#cartPopup ol li strong{
+    font-size: 12px; font-weight: 300px; display: block; text-align: right;
+}
+#cartPopup div{
+    padding: 20px 0 30px 0; overflow: hidden; border-top: 1px solid #f2f2f2;
+}
+#cartPopup div span,
+#cartPopup div span strong{
+    font-size: 16px; font-weight: 500; 
+}
+#cartPopup div span{
+    float: left;
+}
+#cartPopup div span small{
+    font-size: 14px; font-weight: 400; display: block;
+}
+#cartPopup div strong{
+    float: right;
+}
+#cartPopup > a{
+    color: white; background-color: #171f73; padding: 10px 0; border-radius: 30px;
+    margin-bottom: 10px; display: block; text-align: center; margin-bottom: 15px;
+}
+#cartPopup > a:hover{
+background-color: #3344ff;
+}
+
+/* 푸터 */
+footer{
+    background-color: #000; padding: 30px 0 60px 0; box-sizing: border-box; position: relative;
+}
+footer > div{
+    padding: 0 3%;
+}
+footer > div:nth-child(1){
+    margin-bottom: 30px; box-sizing: border-box; position: relative;
+}
+footer > div:nth-child(1) img{
+    width: 100%; display: block; margin: 0 auto; opacity: 0.4;
+}
+footer > div:nth-child(1) div{
+    width: 95%; position: absolute; top: 50%; left: 5%; transform: translateY(-50%);
+}
+footer > div:nth-child(1) h3{
+    font-size: 16px; font-weight: 500; line-height: 22px; max-width: 555px; margin-bottom: 20px; color: #fff;
+}
+footer > div:nth-child(1) h3 small{
+    display: block; font-size: 14px; font-weight: 400; color: #bfbfbf; line-height: 20px; margin-bottom: 20px;
+}
+footer > div:nth-child(1) ul li{
+    font-size: 14px; color: #bfbfbf;
+    background: url(../images/icon_footer_cheak_t.svg) left no-repeat; background-size: 20px; padding-left: 30px; 
+}
+footer > div:nth-child(1) ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+footer > div:nth-child(4),
+footer > div:nth-child(4) input,
+footer > div:nth-child(4) a{
+    color: white;
+}
+footer > div:nth-child(4) > div:nth-child(1) > div h3{
+    font-size: 16px; font-weight: 500; background: url(../images/icon_arrow_down_m.svg) right center no-repeat; background-size: 30px; margin-bottom: 20px;
+}
+footer > div:nth-child(4) > div:nth-child(1) > div h3 + ul{
+    display: none;
+}
+footer > div:nth-child(4) > div:nth-child(1) > div h3.active{
+    background: url(../images/icon_arrow_up_m.svg) right center no-repeat; background-size: 30px;
+}
+footer > div:nth-child(4) > div:nth-child(1) > div h3.active + ul{
+    display: block;
+}
+footer > div:nth-child(4) > div:nth-child(1) > div ul{
+    width: 100%;
+}
+footer > div:nth-child(4) > div:nth-child(1) > div ul li{
+    line-height: 30px;
+}
+footer > div:nth-child(4) > div:nth-child(1) > div ul li:not(:last-of-type){
+    margin-bottom: 15px;
+}
+footer > div:nth-child(4) > div:nth-child(1) > div ul li input{
+    display: block; padding: 0;
+}
+footer > div:nth-child(4) > div:nth-child(1) > div ul li input,
+footer > div:nth-child(4) > div:nth-child(1) > div ul li a{
+    font-size: 14px; font-weight: 500; line-height: 26px; background-color: transparent; border: none;
+}
+footer > div:nth-child(4) > div:nth-child(1) > div:not(:last-child){
+    margin-bottom: 30px;
+}
+footer > div:nth-child(4) > h2{
+    box-sizing: border-box; margin: 50px 0;
+}
+footer > div:nth-child(4) > h2 img{
+    display: block; margin: 0 auto; width: 10%;
+}
+footer > div:nth-child(4) > div:nth-child(3){
+    box-sizing: border-box;
+}
+footer > div:nth-child(4) > div:nth-child(3) form ul{
+    margin-bottom: 60px;
+}
+footer > div:nth-child(4) > div:nth-child(3) form ul li{
+    width: 100%; margin-bottom: 45px;
+}
+footer > div:nth-child(4) > div:nth-child(3) form ul li:not(:nth-child(3)){
+    margin-bottom: 45px;
+}
+footer > div:nth-child(4) > div:nth-child(3) form ul li label{
+    display: block; padding-bottom: 15px; font-size: 18px;
+}
+footer > div:nth-child(4) > div:nth-child(3) form ul li input{
+    width: 100%; box-sizing: border-box; padding-bottom: 10px; background-color: transparent; border: none; border-bottom: 1px solid white; font-size: 18px; outline: none;
+}
+footer > div:nth-child(4) > div:nth-child(3) form p{
+    font-size: 14px; font-weight: 300; line-height: 20px;
+}
+footer > div:nth-child(4) > div:nth-child(3) form p a{
+    text-decoration: underline;
+}
+footer > div:nth-child(4) > div:nth-child(3) form p:first-of-type{
+    margin-bottom: 35px;
+}
+footer > div:nth-child(4) > div:nth-child(3) form p:last-of-type{
+    margin-bottom: 45px;
+}
+footer input[type="submit"]{
+    display: block; background-color: #171f73; border: none; width: 100%; padding: 15px 40px; font-size: 14px; font-weight: 500; border-radius: 40px;
+}
+footer input[type="submit"]:hover{
+    background-color: #3344ff;
+}
+#sizePopup{
+    position: absolute; top: 5%; left: 0; width: 100%; text-align: center; box-sizing: border-box; padding: 50px 10px 10px; background: white; box-shadow: 0 3px 10px 0 black; z-index: 100; 
+}
+#sizePopup .closeBtn{
+    position: absolute; right: 5px; top: 15px; color: #000;
+}
+#sizePopup h3{
+    background: #262626; color: white; text-align: center;
+    padding: 15px 0; margin-bottom: 20px; border-radius: 20px; font-size: 20px; font-weight: 700;
+}
+#sizePopup table{
+    border: 1px solid #262626; background: #fff;  border-collapse: separate; border-spacing: 5px 15px; 
+    text-align: center; box-sizing: border-box;
+}
+#sizePopup table caption{
+    background: #262626; color: white; text-align: center;
+    padding: 15px 0; border-radius: 20px 20px 0 0; font-size: 16px; font-weight: 700;
+}
+#sizePopup table thead{
+    font-size: 12px; font-weight: 500; color: #404040; text-align: center;
+}
+#sizePopup table tbody{
+    text-align: center; color: #262626; font-size: 14px; font-weight: 500;
+}
+#sizePopup table tbody tr:nth-child(2n){
+    color: #737373;
+}
+#sizePopup > table{
+    width: 100%;
+}
+#sizePopup > table:first-of-type{
+    margin-bottom: 4%;
+}
+#sizePopup .centerGroup{
+    width: 100%; display: block;
+}
+#sizePopup .centerGroup > table{
+    margin-bottom: 4%; width: 100%;
+}
+#returnsPopup{
+    position: absolute; background-color: white; left: 0; width: 100%; padding: 15px; box-shadow: 0 3px 10px 0 black; box-sizing: border-box;
+}
+#returnsPopup h3{
+    font-size: 32px; font-weight: 700; padding-bottom: 20px;
+}
+#returnsPopup p{
+    font-size: 14px; font-weight: 400; line-height: 24px;
+}
+#returnsPopup p:not(:last-child){
+    padding-bottom: 20px;
+}
+#returnsPopup .closeBtn{
+    position: absolute; right: 10px; top: 15px; color: #000;
+}
+}
+
+/* 테블릿 */
+@media screen and (min-width: 768px) and (max-width: 1279px){
+input[type="text"],
+input[type="email"],
+input[type="password"],
+.contactContainer input[type="tel"],
+input[type="date"]{
+    -webkit-appearance: none; border-radius: 0px;
+}
+header > div,
+footer > div{
+    margin: 0 auto; 
+}
+header{
+    position: fixed; background-color: #fff; padding: 30px 0; z-index: 1000;
+    top: 0; left: 0; width: 100%; margin: 0 auto;
+}
+header > div{
+    position: relative; box-sizing: border-box; height: 64px;
+}
+header > div > div:first-of-type{
+   height: 64px; position: absolute; top: 0; left: 6%;
+}
+header input#snbBtn,
+header label[for="snbBtn"]{
+     font-size: 18px; color: #000; width: 20%; line-height: 64px;
+    margin: 0; padding: 0; z-index: 1000;
+}
+header input#snbBtn{
+    background: url(../images/icon_menu.svg) right center no-repeat; border: none; text-indent: -9999px; width: 25px;
+}
+header label[for="snbBtn"]{
+    margin-left: 15px;
+}
+header h1 {
+    position: absolute; width: 20%; top: 0; left: 40%; right: 40%; text-align: center;
+}
+header h1 a{
+    display: inline-block;
+}
+header h1 a img{
+    display: block; margin: 0 auto; width: 84px;
+}
+header > div > ul.indexAfter,
+header > div > ul.indexLogin{
+    list-style: none; position: absolute; top: 20px; right: 6%;
+}
+header > div > ul.indexAfter li,
+header > div > ul.indexLogin li{
+    position: relative; display: inline-block; vertical-align: middle; 
+}
+header > div > ul.indexAfter li:not(:last-child),
+header > div > ul.indexLogin li:not(:last-child){
+    margin-right: 30px;
+}
+header > div > ul.indexAfter li a,
+header > div > ul.indexLogin li a,
+header > div > ul.indexAfter li input#cartBtn,
+header > div > ul.indexLogin li input#cartBtn{
+    display: block; background: center no-repeat; width: 24px; height: 24px;
+}
+header > div > ul.indexLogin li a[href="account_login.html"]{
+    background-image: url(../images/icon_acc.svg); background-size: 28px;
+}
+header > div > ul.indexAfter li a[href="account.html"]{
+    background-image: url(../images/icon_acc_after.svg); background-size: 28px;
+}
+header > div > ul.indexAfter li a[href="findstore.html"],
+header > div > ul.indexLogin li a[href="findstore.html"]{
+    background-image: url(../images/icon_map.svg); background-size: 28px;
+}
+header > div > ul.indexAfter li input#cartBtn{
+    background-image: url(../images/icon_cart_after.svg); background-size: 28px; border: none; text-indent: -9999px;
+}
+header > div > ul.indexLogin li input#cartBtn{
+    background-image: url(../images/icon_cart.svg); background-size: 28px; border: none; text-indent: -9999px;
+}
+header > div > ul.indexAfter li a em,
+header > div > ul.indexAfter li label[for="cartBtn"],
+header > div > ul.indexLogin li a em,
+header > div > ul.indexLogin li label[for="cartBtn"]{
+    display: none;
+}
+header > div > ul.indexAfter li a:hover em,
+header > div > ul.indexAfter li:hover label[for="cartBtn"],
+header > div > ul.indexLogin a:hover em,
+header > div > ul.indexLogin li:hover label[for="cartBtn"]{
+  opacity: 1;
+}
+body.main header label,
+body.main header > div > ul.indexAfter li a em,
+body.main header > div > ul.indexAfter li label[for="cartBtn"],
+body.main header > div > ul.indexLogin li a em,
+body.main header > div > ul.indexLogin li label[for="cartBtn"]{
+  color: #fff;
+}
+body.main header.scrolled label,
+body.main header.scrolled > div > ul.indexAfter li a em,
+body.main header.scrolled > div > ul.indexAfter li label[for="cartBtn"],
+body.main header.scrolled > div > ul.indexLogin li a em,
+body.main header.scrolled > div > ul.indexLogin li label[for="cartBtn"]{
+  color: #000;
+}
+body.main header input#snbBtn{
+    background: url(../images/icon_menu_w.svg) center no-repeat; border: none; text-indent: -9999px; width: 25px;
+}
+body.main header > div > ul.indexLogin li a[href="account_login.html"]{
+    background-image: url(../images/icon_acc_w.svg); background-size: 28px;
+}
+body.main header > div > ul.indexAfter li a[href="account.html"]{
+    background-image: url(../images/icon_acc_after_w.svg); background-size: 28px;
+}
+body.main header > div > ul.indexAfter li a[href="findstore.html"],
+body.main header > div > ul.indexLogin li a[href="findstore.html"]{
+    background-image: url(../images/icon_map_w.svg); background-size: 28px;
+}
+body.main header > div > ul.indexLogin li input#cartBtn{
+    background-image: url(../images/icon_cart_w.svg); border: none; text-indent: -9999px; background-size: 28px;
+}
+body.main header > div > ul.indexAfter li input#cartBtn{
+    background-image: url(../images/icon_cart_after_w.svg); border: none; text-indent: -9999px;  background-size: 28px;
+}
+body.main header.scrolled input#snbBtn{
+    background: url(../images/icon_menu.svg) center no-repeat; border: none; text-indent: -9999px; width: 25px;
+}
+body.main header.scrolled > div > ul.indexLogin li a[href="account_login.html"]{
+    background-image: url(../images/icon_acc.svg); background-size: 28px;
+}
+body.main header.scrolled > div > ul.indexAfter li a[href="account.html"]{
+    background-image: url(../images/icon_acc_after.svg); background-size: 28px;
+}
+body.main header.scrolled > div > ul.indexAfter li a[href="findstore.html"],
+body.main header.scrolled > div > ul.indexLogin li a[href="findstore.html"]{
+    background-image: url(../images/icon_map.svg); background-size: 28px;
+}
+body.main header.scrolled > div > ul.indexAfter li input#cartBtn{
+    background-image: url(../images/icon_cart_after.svg); border: none; text-indent: -9999px; background-size: 28px;
+}
+body.main header.scrolled > div > ul.indexLogin li input#cartBtn{
+    background-image: url(../images/icon_cart.svg); border: none; text-indent: -9999px; background-size: 28px;
+}
+
+body.main header{
+    background: transparent;
+}
+body.main header.scrolled{
+    background: #fff;
+}
+#snbPopup,
+#snbPopup *,
+#cartPopup,
+#sizePopup,
+#returnsPopup{
+    line-height: normal; vertical-align: baseline; text-align: left; 
+}
+.closeBtn,
+.deleteBtn{
+    background-color: transparent; border: none; position: absolute;
+}
+#snbPopup{
+    background-color: white; position: absolute; top: -30px; left: 0px; z-index: 1000; padding: 80px 45px 50px 0; box-shadow: 0 3px 10px 0 black;
+    box-sizing: border-box;
+}
+#snbPopup .closeBtn,
+#snbPopup label[for="closeBtn"]{
+   position: absolute; top: 50px; color: black;
+}
+#snbPopup .closeBtn{
+    right: 105px; font-size: 22px;
+}
+#snbPopup label[for="closeBtn"]{
+    right: 45px; font-size: 22px;
+}
+#snbPopup ul{
+    margin: 45px 45px 0; text-align: center;
+}
+#snbPopup li:not(:last-child){
+    padding-bottom: 30px;
+}
+#snbPopup ol{
+    margin-top: 30px;
+}
+#snbPopup ol li:last-child {
+  padding-bottom: 0;
+}
+#snbPopup li a,
+#snbPopup li b{
+    color: black; font-size: 18px; font-weight: 500;
+}
+#snbPopup li a:hover{
+    text-decoration: underline;
+}
+#snbPopup li b{
+    display: block; width: 100%;
+    background: url(../images/icon_add.svg) right center no-repeat; cursor: pointer;
+    padding-right: 65px; 
+}
+#snbPopup li b + ol{
+    display: none;
+}
+#snbPopup li b.active{
+background: url(../images/icon_remove.svg) right center no-repeat; 
+}
+#snbPopup li b.active + ul{
+    display: block;
+}
+#cartPopup{
+    background-color: white; position: absolute; right: 6%; top: 45px; width: 40%; min-width: 330px; max-width: 430px;
+    box-shadow: 3px 3px 10px black; z-index: 1000; padding: 0 20px; box-sizing: border-box;
+}
+#cartPopup .closeBtn,
+#cartPopup .deleteBtn{
+    border: none; background-color: transparent; font-size: 20px; margin: 0; padding: 0; color: #000;
+}
+#cartPopup .closeBtn{
+    position: absolute; right: 0; top: 0; margin: 10px 10px 0 0; font-size: 22px;
+}
+#cartPopup .deleteBtn{
+    position: absolute; right: 0; top: 0;
+}
+#cartPopup h2,
+#cartPopup h3{
+    font-size: 12px; font-weight: 400;
+}
+#cartPopup h2{     
+    padding: 35px 0 15px;
+}
+#cartPopup ol:after{
+    content: ''; display: block; clear: both;
+}
+#cartPopup ol{
+    background-color: #f2f2f2; padding: 10px; margin-bottom: 80px;
+    border-bottom: 1px solid #f2f2f2;
+}
+#cartPopup ol li{
+    list-style: none; position: relative;
+}
+#cartPopup ol li a{
+    float: left; padding-right: 20px;
+}
+#cartPopup ol li h3{
+    padding-top: 10px; line-height: 16px; padding-bottom: 15px; max-width: 270px; 
+}
+#cartPopup ol li h3 em{
+    font-style: normal; font-size: 12px; font-weight: 300; display: block;
+    padding-top: 10px;
+}
+#cartPopup ol li strong{
+    font-size: 12px; font-weight: 300px; display: block; text-align: right;
+}
+#cartPopup div{
+    padding: 20px 0 30px 0; overflow: hidden; border-top: 1px solid #f2f2f2;
+}
+#cartPopup div span,
+#cartPopup div span strong{
+    font-size: 16px; font-weight: 500; 
+}
+#cartPopup div span{
+    float: left;
+}
+#cartPopup div span small{
+    font-size: 14px; font-weight: 400; display: block;
+}
+#cartPopup div strong{
+    float: right;
+}
+#cartPopup > a{
+    color: white; background-color: #171f73; padding: 15px 0; border-radius: 30px;
+    margin-bottom: 10px; display: block; text-align: center; margin-bottom: 15px;
+}
+#cartPopup > a:hover{
+background-color: #3344ff;
+}
+
+/* 푸터 */
+footer{
+    background-color: #000; padding: 60px 0; box-sizing: border-box; position: relative;
+}
+footer > div{
+    padding: 0 6%;
+}
+footer > div:nth-child(1){
+    margin-bottom: 60px; box-sizing: border-box; position: relative;
+}
+footer > div:nth-child(1) img{
+    width: 100%; display: block; margin: 0 auto; opacity: 0.4;
+}
+footer > div:nth-child(1) div{
+    width: 60%; position: absolute; top: 50%; left: 20%; right: 20%; transform: translateY(-50%)
+}
+footer > div:nth-child(1) h3{
+    font-size: 32px; font-weight: 500; line-height: 36px; max-width: 555px; margin-bottom: 35px; color: #fff;
+}
+footer > div:nth-child(1) h3 small{
+    display: block; font-size: 24px; font-weight: 400; color: #bfbfbf; line-height: 25px; margin-bottom: 30px;
+}
+footer > div:nth-child(1) ul li{
+    font-size: 24px; color: #bfbfbf;
+    background: url(../images/icon_footer_cheak_t.svg) left no-repeat; padding-left: 40px; 
+}
+footer > div:nth-child(1) ul li:not(:last-child){
+    margin-bottom: 30px;
+}
+footer > div:nth-child(4),
+footer > div:nth-child(4) input,
+footer > div:nth-child(4) a{
+    color: white;
+}
+footer > div:nth-child(4) > div:nth-child(1) > div:after{
+    content: ''; display: block; content: '';
+}
+footer > div:nth-child(4) > div:nth-child(1) > div h3{
+    float: left; font-size: 30px; font-weight: 500; width: 150px
+}
+footer > div:nth-child(4) > div:nth-child(1) > div ul{
+    width: 100%;
+}
+footer > div:nth-child(4) > div:nth-child(1) > div ul li{
+    display: inline-block; line-height: 30px;
+}
+footer > div:nth-child(4) > div:nth-child(1) > div ul li input{
+    display: block; padding: 0;
+}
+footer > div:nth-child(4) > div:nth-child(1) > div ul li input,
+footer > div:nth-child(4) > div:nth-child(1) > div ul li a{
+    font-size: 20px; font-weight: 500; background-color: transparent; border: none;
+}
+footer > div:nth-child(4) > div:nth-child(1) > div ul li:not(:last-child){
+    margin-right: 30px;
+}
+footer > div:nth-child(4) > div:nth-child(1) > div:not(:last-child){
+    margin-bottom: 30px;
+}
+footer > div:nth-child(4) > h2{
+    box-sizing: border-box; margin: 50px 0;
+}
+footer > div:nth-child(4) > h2 img{
+    display: block; margin: 0 auto; width: 10%;
+}
+footer > div:nth-child(4) > div:nth-child(3){
+    box-sizing: border-box;
+}
+footer > div:nth-child(4) > div:nth-child(3) form ul{
+    margin-bottom: 60px;
+}
+footer > div:nth-child(4) > div:nth-child(3) form ul li:nth-child(1){
+    width: 100%; margin-bottom: 45px;
+}
+footer > div:nth-child(4) > div:nth-child(3) form ul li:nth-child(2){
+    margin-right: 3%;
+}
+footer > div:nth-child(4) > div:nth-child(3) form ul li:nth-child(2),
+footer > div:nth-child(4) > div:nth-child(3) form ul li:nth-child(3){
+    width: 48%; display: inline-block;
+}
+footer > div:nth-child(4) > div:nth-child(3) form ul li label{
+    display: block; padding-bottom: 15px; font-size: 20px;
+}
+footer > div:nth-child(4) > div:nth-child(3) form ul li input{
+    width: 100%; box-sizing: border-box; padding-bottom: 10px; background-color: transparent; border: none; border-bottom: 1px solid white; font-size: 20px; outline: none;
+}
+footer > div:nth-child(4) > div:nth-child(3) form p{
+    font-size: 20px; font-weight: 300; line-height: 26px;
+}
+footer > div:nth-child(4) > div:nth-child(3) form p a{
+    text-decoration: underline;
+}
+footer > div:nth-child(4) > div:nth-child(3) form p:first-of-type{
+    margin-bottom: 35px;
+}
+footer > div:nth-child(4) > div:nth-child(3) form p:last-of-type{
+    margin-bottom: 45px;
+}
+footer input[type="submit"]{
+    margin-left: auto; display: block; background-color: #171f73; border: none;
+    padding: 20px 40px; font-size: 20px; font-weight: 500; 
+    border-radius: 40px;
+}
+footer input[type="submit"]:hover{
+    background-color: #3344ff;
+}
+#sizePopup{
+    position: absolute; top: 5%; left: 2%; right: 2%; width: 96%; text-align: center; box-sizing: border-box; padding: 50px 25px 25px; background: white; box-shadow: 0 3px 10px 0 black; z-index: 100; 
+}
+#sizePopup .closeBtn{
+    position: absolute; right: 10px; top: 15px; color: #000;  font-size: 26px;
+}
+#sizePopup h3{
+    background: #262626; color: white; text-align: center;
+    padding: 20px 0; margin-bottom: 30px; border-radius: 20px; font-size: 24px; font-weight: 700;
+}
+#sizePopup table{
+    border: 1px solid #262626; background: #fff;  border-collapse: separate; border-spacing: 10px 20px; 
+    text-align: center; box-sizing: border-box;
+}
+#sizePopup table caption{
+    background: #262626; color: white; text-align: center;
+    padding: 15px 0; border-radius: 20px 20px 0 0; font-size: 20px; font-weight: 700;
+}
+#sizePopup table thead{
+    font-size: 18px; font-weight: 500; color: #404040; text-align: center;
+}
+#sizePopup table tbody{
+    text-align: center; color: #262626; font-size: 22px; font-weight: 500;
+}
+#sizePopup table tbody tr:nth-child(2n){
+    color: #737373;
+}
+#sizePopup > table{
+    width: 100%;
+}
+#sizePopup > table:first-of-type{
+    margin-bottom: 4%;
+}
+#sizePopup .centerGroup{
+    width: 100%; display: block;
+}
+#sizePopup .centerGroup > table{
+    margin-bottom: 4%; width: 100%;
+}
+#returnsPopup{
+    position: absolute; background-color: white; left: 6%; right: 6%; width: 88%; padding: 60px; box-shadow: 0 3px 10px 0 black; box-sizing: border-box;
+}
+#returnsPopup h3{
+    font-size: 40px; font-weight: 700; padding-bottom: 40px;
+}
+#returnsPopup p{
+    font-size: 18px; font-weight: 400;
+}
+#returnsPopup p:not(:last-child){
+    padding-bottom: 35px;
+}
+#returnsPopup .closeBtn{
+    position: absolute; right: 10px; top: 20px; color: #000; font-size: 22px;
+}
+}
+
+/* 데스크탑 */
+@media screen and (min-width:1280px){
+body:not(.main){
+    padding-top: 124px;
+}
+header > div,
+.indexContainer > div:nth-child(1) > div:nth-child(2),
+.indexContainer > div:nth-child(2),
+.indexContainer > div:nth-child(4),
+.listContainer,
+.detailContainer,
+.signContainer,
+.basketContainer > form > div,
+.purchaseContainer > form > div,
+.customContainer > form > div,
+.findstoreContainer aside,
+.ourstoryContainer,
+.thelooksContainer,
+.thelookskimonoContainer,
+.thelook10thContainer,
+.termsContainer,
+.privacyContainer,
+.cookieContainer,
+.faqContainer,
+.stockistContainer,
+.contactContainer,
+footer > div{
+    max-width: 1830px; margin: 0 auto;
+}
+
+/* 헤더 */
+header{
+    position: fixed; background-color: #fff; padding: 30px 2% 30px 2%; z-index: 1000;
+    top: 0; left: 0; width: 96%; margin: 0 auto;
+}
+header > div{
+    position: relative; box-sizing: border-box; height: 64px;
+}
+header input#snbBtn,
+header label[for="snbBtn"]{
+    position: absolute; top: 0; left: 0; font-size: 18px; color: #000; width: 10%;
+    margin: 0; padding: 0; line-height: 64px; z-index: 1000; cursor: pointer;
+}
+header input#snbBtn{
+    background: url(../images/icon_menu.svg) right center no-repeat; border: none; text-indent: -9999px; width: 25px;
+}
+header label[for="snbBtn"]{
+    margin-left: 40px;
+}
+header h1 {
+    width: 100%; position: absolute; top: 0; left: 0; display: block; text-align: center;
+}
+header h1 a{
+    display: inline-block;
+}
+header h1 a img{
+    display: block; margin: 0 auto; width: 84px;
+}
+header > div > ul.indexAfter,
+header > div > ul.indexLogin{
+    list-style: none; position: absolute; top: 20px; right: 0;
+}
+header > div > ul.indexAfter li,
+header > div > ul.indexLogin li{
+    position: relative; display: inline-block; vertical-align: middle;
+}
+header > div > ul.indexAfter li:not(:last-child),
+header > div > ul.indexLogin li:not(:last-child){
+    margin-right: 45px;
+}
+header > div > ul.indexAfter li a,
+header > div > ul.indexLogin li a,
+header > div > ul.indexAfter li input#cartBtn,
+header > div > ul.indexLogin li input#cartBtn{
+    display: block; background: center no-repeat; width: 24px; height: 24px;
+}
+header > div > ul.indexLogin li a[href="account_login.html"]{
+    background-image: url(../images/icon_acc.svg); background-size: 28px;
+}
+header > div > ul.indexAfter li a[href="account.html"]{
+    background-image: url(../images/icon_acc_after.svg); background-size: 28px;
+}
+header > div > ul.indexAfter li a[href="findstore.html"],
+header > div > ul.indexLogin li a[href="findstore.html"]{
+    background-image: url(../images/icon_map.svg); background-size: 28px;
+}
+header > div > ul.indexAfter li input#cartBtn{
+    background-image: url(../images/icon_cart_after.svg); background-size: 28px; border: none; text-indent: -9999px; cursor: pointer;
+}
+header > div > ul.indexLogin li input#cartBtn{
+    background-image: url(../images/icon_cart.svg); background-size: 28px; border: none; text-indent: -9999px; cursor: pointer;
+}
+header > div > ul.indexAfter li a em,
+header > div > ul.indexAfter li label[for="cartBtn"],
+header > div > ul.indexLogin li a em,
+header > div > ul.indexLogin li label[for="cartBtn"]{
+    color: #000; font-size: 14px; font-style: normal; font-weight: 400; position: absolute; margin-top: 5px;
+    opacity: 0; transition: opacity 0.2s; top: 100%; left: 50%; transform: translateX(-50%);
+}
+header > div > ul.indexAfter li a:hover em,
+header > div > ul.indexAfter li:hover label[for="cartBtn"],
+header > div > ul.indexLogin a:hover em,
+header > div > ul.indexLogin li:hover label[for="cartBtn"]{
+  opacity: 1;
+}
+body.main header label,
+body.main header > div > ul.indexAfter li a em,
+body.main header > div > ul.indexAfter li label[for="cartBtn"],
+body.main header > div > ul.indexLogin li a em,
+body.main header > div > ul.indexLogin li label[for="cartBtn"]{
+  color: #fff;
+}
+body.main header.scrolled label,
+body.main header.scrolled > div > ul.indexAfter li a em,
+body.main header.scrolled > div > ul.indexAfter li label[for="cartBtn"],
+body.main header.scrolled > div > ul.indexLogin li a em,
+body.main header.scrolled > div > ul.indexLogin li label[for="cartBtn"]{
+  color: #000;
+}
+body.main header label{
+  color: #fff;
+}
+body.main header.scrolled label{
+  color: #000;
+}
+body.main header input#snbBtn{
+    background: url(../images/icon_menu_w.svg) center no-repeat; border: none; text-indent: -9999px; width: 25px;
+}
+body.main header > div > ul.indexLogin li a[href="account_login.html"]{
+    background-image: url(../images/icon_acc_w.svg); background-size: 28px;
+}
+body.main header > div > ul.indexAfter li a[href="account.html"]{
+    background-image: url(../images/icon_acc_after_w.svg); background-size: 28px;
+}
+body.main header > div > ul.indexAfter li a[href="findstore.html"],
+body.main header > div > ul.indexLogin li a[href="findstore.html"]{
+    background-image: url(../images/icon_map_w.svg); background-size: 28px;
+}
+body.main header > div > ul.indexLogin li input#cartBtn{
+    background-image: url(../images/icon_cart_w.svg); border: none; text-indent: -9999px; background-size: 28px;
+}
+body.main header > div > ul.indexAfter li input#cartBtn{
+    background-image: url(../images/icon_cart_after_w.svg); border: none; text-indent: -9999px;  background-size: 28px;
+}
+body.main header.scrolled input#snbBtn{
+    background: url(../images/icon_menu.svg) center no-repeat; border: none; text-indent: -9999px; width: 25px;
+}
+body.main header.scrolled > div > ul.indexLogin li a[href="account_login.html"]{
+    background-image: url(../images/icon_acc.svg); background-size: 28px;
+}
+body.main header.scrolled > div > ul.indexAfter li a[href="account.html"]{
+    background-image: url(../images/icon_acc_after.svg); background-size: 28px;
+}
+body.main header.scrolled > div > ul.indexAfter li a[href="findstore.html"],
+body.main header.scrolled > div > ul.indexLogin li a[href="findstore.html"]{
+    background-image: url(../images/icon_map.svg); background-size: 28px;
+}
+body.main header.scrolled > div > ul.indexAfter li input#cartBtn{
+    background-image: url(../images/icon_cart_after.svg); border: none; text-indent: -9999px; background-size: 28px;
+}
+body.main header.scrolled > div > ul.indexLogin li input#cartBtn{
+    background-image: url(../images/icon_cart.svg); border: none; text-indent: -9999px; background-size: 28px;
+}
+body.main header{
+    background: transparent;
+}
+body.main header.scrolled{
+    background: #fff;
+}
+
+/* 팝업 */
+#snbPopup,
+#snbPopup *,
+#cartPopup,
+#sizePopup,
+#returnsPopup{
+    line-height: normal; vertical-align: baseline; text-align: left; 
+}
+.closeBtn,
+.deleteBtn{
+    background-color: transparent; border: none; position: absolute;
+}
+#snbPopup{
+    background-color: white; position: absolute; top: -30px; left: -3%; 
+    z-index: 1000; padding: 80px 45px 50px 0; box-shadow: 0 3px 10px 0 black;
+    box-sizing: border-box;
+}
+#snbPopup .closeBtn,
+#snbPopup label[for="closeBtn"]{
+   position: absolute; top: 50px; color: black;
+}
+#snbPopup .closeBtn{
+    right: 105px; font-size: 20px; cursor: pointer; 
+}
+#snbPopup label[for="closeBtn"] {
+    right: 45px; font-size: 20px; cursor: pointer; 
+}
+#snbPopup ul{
+    margin: 45px 45px 0; text-align: center;
+}
+#snbPopup li:not(:last-child){
+    padding-bottom: 30px;
+}
+#snbPopup ol{
+    margin-top: 30px;
+}
+#snbPopup ol li:last-child {
+  padding-bottom: 0;
+}
+#snbPopup li a,
+#snbPopup li b{
+    color: black; font-size: 18px; font-weight: 500;
+}
+#snbPopup li a:hover{
+    text-decoration: underline;
+}
+#snbPopup li b{
+    display: block; width: 100%;
+    background: url(../images/icon_add.svg) right center no-repeat; cursor: pointer;
+    padding-right: 65px; 
+}
+#snbPopup li b + ol{
+    display: none;
+}
+#snbPopup li b.active{
+background: url(../images/icon_remove.svg) right center no-repeat; 
+}
+#snbPopup li b.active + ul{
+    display: block;
+}
+#cartPopup{
+    background-color: white; position: absolute; right: 0; top: 48px; width: 40%; max-width: 430px;
+    box-shadow: 3px 3px 10px black; overflow: hidden; z-index: 1000; padding: 0 30px; box-sizing: border-box;
+}
+#cartPopup .closeBtn,
+#cartPopup .deleteBtn{
+    border: none; background-color: transparent; font-size: 20px; margin: 0; padding: 0;
+}
+#cartPopup .closeBtn{
+    position: absolute; right: 0; top: 0; margin: 10px 10px 0 0;
+}
+#cartPopup .deleteBtn{
+    position: absolute; right: 0; top: 0;
+}
+#cartPopup h2,
+#cartPopup h3{
+    font-size: 12px; font-weight: 400;
+}
+#cartPopup h2{     
+    padding: 35px 0 30px;
+}
+#cartPopup ol:after{
+    content: ''; display: block; clear: both;
+}
+#cartPopup ol{
+    background-color: #f2f2f2; padding: 10px; margin-bottom: 80px;
+    border-bottom: 1px solid #f2f2f2;
+}
+#cartPopup ol li{
+    list-style: none; position: relative;
+}
+#cartPopup ol li a{
+    float: left; padding-right: 20px;
+}
+#cartPopup ol li h3{
+    padding-top: 10px; line-height: 16px; padding-bottom: 15px; max-width: 270px;
+}
+#cartPopup ol li h3 em{
+    font-style: normal; font-size: 12px; font-weight: 300; display: block;
+    padding-top: 20px;
+}
+#cartPopup ol li strong{
+    font-size: 12px; font-weight: 300px; display: block; text-align: right;
+}
+#cartPopup div{
+    padding: 20px 0 30px 0; overflow: hidden; border-top: 1px solid #f2f2f2;
+}
+#cartPopup div span,
+#cartPopup div span strong{
+    font-size: 18px; font-weight: 500; 
+}
+#cartPopup div span{
+    float: left;
+}
+#cartPopup div span small{
+    font-size: 14px; font-weight: 400; display: block;
+}
+#cartPopup div strong{
+    float: right;
+}
+#cartPopup > a{
+    color: white; background-color: #171f73; padding: 15px 0; border-radius: 30px;
+    margin-bottom: 10px; display: block; text-align: center; margin-bottom: 15px;
+}
+#cartPopup > a:hover{
+background-color: #3344ff;
+}
+
+/* 푸터 */
+footer{
+    background-color: #000; padding: 150px 2% 0; box-sizing: border-box; position: relative;
+}
+footer > div:nth-child(1){
+    background-color: white; margin-bottom: 60px; display: flex; justify-content: center;
+    align-items: flex-start; padding: 0 2%; box-sizing: border-box; align-items: center;  
+}
+footer > div:nth-child(1) img{
+    width: 45%; display: block; margin-right: 7.65%;
+}
+footer > div:nth-child(1) div{
+    width: 100%;  box-sizing: border-box;
+}
+footer > div:nth-child(1) h3{
+    font-size: 32px; font-weight: 500; line-height: 36px;
+    max-width: 555px; margin-bottom: 35px;
+}
+footer > div:nth-child(1) h3 small{
+    display: block; font-size: 24px; font-weight: 400; color: #404040; line-height: 25px;
+    margin-bottom: 30px;
+}
+footer > div:nth-child(1) ul li{
+    font-size: 24px; color: #737373;
+    background: url(../images/icon_footer_cheak.svg) left no-repeat; padding-left: 40px; background-size: 24px;
+}
+footer > div:nth-child(1) ul li:not(:last-child){
+    margin-bottom: 30px;
+}
+footer > div:nth-child(4):after{
+    content: ''; display: block; clear: both;
+}
+footer > div:nth-child(4),
+footer > div:nth-child(4) input,
+footer > div:nth-child(4) a{
+    color: white;
+}
+footer > div:nth-child(4){
+    display: flex;  justify-content: space-between; align-items: flex-start; flex-wrap: wrap;
+}
+footer > div:nth-child(4) > div:nth-child(1){
+    float: left; width: 40%;
+}
+footer > div:nth-child(4) > div:nth-child(1) > div{
+    display: flex; margin-bottom: 95px; align-items: flex-start;
+}
+footer > div:nth-child(4) > div:nth-child(1) > div h3{
+    font-size: 30px; font-weight: 500; min-width: 160px;
+}
+footer > div:nth-child(4) > div:nth-child(1) > div ul li{
+    display: inline-block; line-height: 30px;
+}
+footer > div:nth-child(4) > div:nth-child(1) > div ul li input{
+    display: block; cursor: pointer;
+}
+footer > div:nth-child(4) > div:nth-child(1) > div ul li input,
+footer > div:nth-child(4) > div:nth-child(1) > div ul li a{
+    font-size: 24px; font-weight: 500; background-color: transparent; border: none;
+}
+footer > div:nth-child(4) > div:nth-child(1) > div ul li:not(:last-child){
+    margin-right: 30px;
+}
+footer > div:nth-child(4) > h2{
+    width: 20%; text-align: center; box-sizing: border-box;
+}
+footer > div:nth-child(4) > h2 img{
+    display: block; margin: 0 auto; width: 25%;
+}
+footer > div:nth-child(4) > div:nth-child(3){
+    width: 40%; max-width: 100%; box-sizing: border-box;
+}
+footer > div:nth-child(4) > div:nth-child(3) form ul{
+    margin-bottom: 60px; display: flex; flex-wrap: wrap;
+}
+footer > div:nth-child(4) > div:nth-child(3) form ul li:nth-child(1){
+    width: 100%; margin-bottom: 45px;
+}
+footer > div:nth-child(4) > div:nth-child(3) form ul li:nth-child(2){
+    margin-right: 3%;
+}
+footer > div:nth-child(4) > div:nth-child(3) form ul li:nth-child(2),
+footer > div:nth-child(4) > div:nth-child(3) form ul li:nth-child(3){
+    width: 48.5%;
+}
+footer > div:nth-child(4) > div:nth-child(3) form ul li label{
+    display: block; padding-bottom: 15px; font-size: 20px;
+}
+footer > div:nth-child(4) > div:nth-child(3) form ul li input{
+    width: 100%; box-sizing: border-box; padding-bottom: 10px; background-color: transparent; border: none; border-bottom: 1px solid white; font-size: 20px; outline: none;
+}
+footer > div:nth-child(4) > div:nth-child(3) form p{
+    font-size: 24px; font-weight: 300; line-height: 26px;
+}
+footer > div:nth-child(4) > div:nth-child(3) form p a{
+    text-decoration: underline;
+}
+footer > div:nth-child(4) > div:nth-child(3) form p:first-of-type{
+    margin-bottom: 35px;
+}
+footer > div:nth-child(4) > div:nth-child(3) form p:last-of-type{
+    margin-bottom: 45px;
+}
+footer input[type="submit"]{
+    margin-left: auto; display: block; background-color: #171f73; border: none;
+    padding: 20px 40px; font-size: 20px; font-weight: 500; 
+    border-radius: 40px; margin-bottom: 60px; cursor: pointer;
+}
+footer input[type="submit"]:hover{
+    background-color: #3344ff;
+}
+
+/* 팝업 */
+#sizePopup:after{
+  content: ''; display: block; clear: both;
+}
+#sizePopup{
+    position: absolute; top: 5%; left: 2%; right: 2%; width: 96%; text-align: center; box-sizing: border-box; padding: 50px 25px 25px; background: white; box-shadow: 0 3px 10px 0 black; z-index: 100;
+}
+#sizePopup .closeBtn{
+    position: absolute; right: 10px; top: 10px; cursor: pointer;
+}
+#sizePopup h3{
+    background: #262626; color: white; text-align: center;
+    padding: 20px 0; margin-bottom: 30px; border-radius: 20px; font-size: 24px; font-weight: 700;
+}
+#sizePopup table{
+    border: 1px solid #262626; background: #fff;  border-collapse: separate; border-spacing: 10px 20px; 
+    text-align: center; box-sizing: border-box;
+}
+#sizePopup table caption{
+    background: #262626; color: white; text-align: center;
+    padding: 15px 0; border-radius: 20px 20px 0 0; font-size: 20px; font-weight: 700;
+}
+#sizePopup table thead{
+    font-size: 18px; font-weight: 500; color: #404040; text-align: center;
+}
+#sizePopup table tbody{
+    text-align: center; color: #262626; font-size: 22px; font-weight: 500;
+}
+#sizePopup table tbody tr:nth-child(2n){
+    color: #737373;
+}
+#sizePopup > table:first-of-type{
+    float: left; width: 28%; margin-right: 2%;
+}
+#sizePopup .centerGroup{
+    float: left; width: 28%; display: block;
+}
+#sizePopup .centerGroup > table{
+    margin-bottom: 4%; width: 100%;
+}
+#sizePopup > table:last-of-type{
+    float: right; width: 40%; margin-left: 2%;
+}
+#returnsPopup{
+    position: absolute; background-color: white; bottom: 4%; left: 15%; width: 70%; padding: 90px; box-shadow: 0 3px 10px 0 black; box-sizing: border-box;
+}
+#returnsPopup h3{
+    font-size: 80px; font-weight: 700; padding-bottom: 40px;
+}
+#returnsPopup p{
+    font-size: 24px; font-weight: 400;
+}
+#returnsPopup p:not(:last-child){
+    padding-bottom: 35px;
+}
+#returnsPopup .closeBtn{
+    position: absolute; right: 10px; top: 20px; cursor: pointer;
+}
+}

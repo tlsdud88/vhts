@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VHTS</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitVids.js"></script>
+    <script src="js/vhts.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div>
+            <div>
+                <input type="button" id="snbBtn" value="menuOpen" data-popup="snbPopup">
+                <label for="snbBtn">Menu</label>
+            </div>
+               <div id="snbPopup">
+                <div>
+                    <input type="button" id="closeBtn" value="close" class="material-symbols-outlined closeBtn">
+                    <label for="closeBtn">Close</label>
+                </div>
+                <ul>
+                    <li><a href="list_combatshirts_01.html">Combat Shirts</a></li>
+                    <li><a href="list_combatshorts_01.html">Combat Shorts</a></li>
+                    <li><a href="list_kimonos_01.html">Kimonos</a></li>
+                    <li><a href="list_apparel_01.html">Apparel</a></li>
+                    <li><a href="list_accessories_01.html">Accessories</a></li>
+                    <li><a href="custom.html">Custom</a></li>
+                    <li>
+                        <b>SPECIAL EDITION</b>
+                        <ol>
+                            <li><a href="list_nickyrod_01.html">Nicky Rod</a></li>
+                            <li><a href="list_anniversary.html">10th Anniversary</a></li>
+                            <li><a href="list_j_demsky.html">J. Demsky Collaboration</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="list_sale_01.html">SALE</a></li>
+                    <li><a href="thelook.html">THE LOOKS</a></li>
+                    <li><a href="ourstory.html">ABOUT</a></li>
+                </ul>
+            </div>
+            <h1>
+                <a href="index_after.html">
+                    <img src="images/logo.svg" alt="VHTS">
+                </a>
+            </h1>
+            <ul class="indexAfter">
+                <li><a href="account.html"><em>Account</em></a></li>
+                <li><a href="findstore.html"><em>Store</em></a></li>
+                <li>
+                    <input type="button" id="cartBtn" value="Cart" data-popup="cartPopup">
+                    <label for="cartBtn">Cart</label>
+                </li>
+            </ul>
+            <div id="cartPopup">
+                <input type="button" value="close" class="material-symbols-outlined closeBtn">
+                <h2>YOU HAVE 1 ITEM IN YOUR BASKET</h2>
+                <ol>
+                    <li>
+                        <input type="button" value="close" class="material-symbols-outlined deleteBtn">
+                        <a href="kimonos_product_02.html">
+                            <img src="images/kimonos_02.png" alt="BE WATER 2024 Special Edition 
+                            Kimono White">
+                        </a>
+                        <h3>
+                            BE WATER 2024 Special Edition Kimono White
+                            <em>Kimono</em>
+                        </h3>
+                        <strong>$189.00</strong>
+                    </li>
+                </ol>
+                <div>
+                    <span>
+                        Order Total
+                        <small>Tax incl.</small>
+                    </span>
+                    <strong>$189.00</strong>
+                </div>
+                <a href="basket.html">Go to basket</a>
+            </div>
+        </div>
+    </header>
+    <div class="faqContainer">
+        <h2>FAQ</h2>
+        <ul>
+            <li>
+                <details>
+                    <summary>How can I place an order?</summary>
+                    <p>Orders can be placed online at www.vhtsny.com</p>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>What forms of payment do you accept?</summary>
+                    <p>Visa, MasterCard,  American Express, JCB,  Diners Club, Discover, Financing and Google pay</p>
+                </details>
+            </li>
+        </ul>
+        <h2>SHIPPING</h2>
+        <ul>
+            <li>
+                <details>
+                    <summary>When will my order ship?</summary>
+                    <p>
+                        We do not offer same day shipping. Orders are processed for shipment within 1-3 business days after an order is placed (Excludes Pre-sale/Pre-order items). Courier transit time is in addition to the order processing time stated above. Orders placed on weekends and holidays will start processing on the next business day.
+                    </p>
+                    <em>
+                        *** NOTE:  Processing time applies to merchandise that is readily available. Kimonos and special releases are EXCLUDED from processing time mentioned above. Kimonos and special releases will ship within the estimated timeframe given in the details of the product description.
+                    </em>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Where do you ship?</summary>
+                    <p>
+                        We ship to the 48 contiguous states, Alaska, Hawaii, US Territories and most countries.
+                    </p>
+                    <b> 48 Contiguous States</b>
+                    <ul>
+                        <li>
+                            <u>FedEx Ground/Home Ground:</u>
+                            <p>
+                                Estimated transit time is 1-7 business days (excludes weekends and holidays) based on distance to destination (Alaska and Hawaii is estimated at 3-7 business days). This service does not provide a guaranteed delivery date. Tracking and insurance provided. Signature option is not available. Package will be left at door step whether or not you are present for delivery.
+                            </p>
+                        </li>
+                        <li>
+                            <u>FedEx 2-Day:</u>
+                            <p>
+                                After order has been processed and shipped, delivery is guaranteed in 2 days to most areas (excludes weekends and holidays). Rural destinations may require an extra day in transit.  Tracking and insurance provided. Signature option is not available. Package will be left at door step whether or not you are present for delivery.
+                            </p>
+                        </li>
+                        <li>
+                            <u>USPS Priority Mail:</u>
+                            <p>
+                                Estimated transit time is 1-3 business days depending on destination. This service does not provide a guaranteed delivery date. Delivery confirmation number is provided when available. Carrier insurance is not provided.
+                            </p>
+                        </li>
+                    </ul>
+                    <b>HAWAII & ALASKA</b>
+                    <ul>
+                        <li>
+                            <u>USPS Priority Mail:</u>
+                            <p>
+                                Estimated transit time is 3-7 business days, but does not provide a guaranteed delivery date. Delivery confirmation number is provided when available. Carrier insurance is not provided.
+                            </p>
+                        </li>
+                    </ul>
+                    <b>GUAM, PUERTO RICO, US VIRGIN ISLANDS, APO/FPO MILITARY ADDRESSES</b>
+                    <ul>
+                        <li>
+                            <u>USPS Priority Mail:</u>
+                            <p>
+                                Estimated transit time is 7-10 business days, but does not provide a guaranteed delivery date. Delivery confirmation number is provided when available. Carrier insurance is not provided.
+                            </p>
+                        </li>
+                    </ul>
+                    <b>CANADA</b>
+                    <ul>
+                        <li>
+                            <u>USPS International Priority Mail:</u>
+                            <p>
+                                Estimated transit time is 7-10 business days, but does not provide a guaranteed delivery date. Delivery confirmation number is provided when available. Carrier insurance is not provided.
+                            </p>
+                            <em>
+                                ***All customers are responsible for taxes and duties incurred on international shipments. For more information regarding taxes and duties, please contact your local customs office
+                            </em>
+                        </li>
+                        <li>
+                            <u>USPS International Express Mail:</u>
+                            <p>
+                                Estimated transit time is 3-5 business days, but does not provide a guaranteed delivery date. Delivery confirmation number is provided when available.
+                            </p>
+                            <em>
+                                ***All customers are responsible for taxes and duties incurred on international shipments. For more information regarding taxes and duties, please contact your local customs office
+                            </em>
+                        </li>
+                        <li>
+                            <u>FedEx International Priority:</u>
+                            <p>
+                                Estimated transit time is 1-3 business days depending on destination. This service does not provide a guaranteed delivery date. Tracking and insurance provided. Signature option is not available. Package will be left at door step whether or not you are present for delivery.
+                            </p>
+                            <em>
+                                ***All customers are responsible for taxes and duties incurred on international shipments. For more information regarding taxes and duties, please contact your local customs office.
+                            </em>
+                        </li>
+                        <li>
+                            <u>FedEx International Economy:</u>
+                            <p>
+                                Estimated transit time is 2-5 business days. This service does not provide a guaranteed delivery date. Tracking and insurance provided. Signature option is not available. Package will be left at door step whether or not you are present for delivery.
+                            </p>
+                            <em>    
+                                ***All customers are responsible for taxes and duties incurred on international shipments. For more information regarding taxes and duties, please contact your local customs office.
+                            </em>
+                        </li>
+                    </ul>
+                    <b>COUNTRIES OUTSIDE THE US </b>
+                    <ul>
+                        <li>
+                            <u>USPS International Priority Mail:</u>
+                            <p>
+                                Estimated transit time is 7-10 business days, but does not provide a guaranteed delivery date. Delivery confirmation number is provided when available.
+                            </p>
+                            <em>
+                                ***All customers are responsible for taxes and duties incurred on international shipments. For more information regarding taxes and duties, please contact your local customs office
+                            </em>
+                        </li>
+                        <li>
+                            <u>USPS International Express Mail:</u>
+                            <p>
+                                Estimated transit time is 3-5 business days, but does not provide a guaranteed delivery date. Delivery confirmation number is provided when available.
+                            </p>
+                            <em>
+                                ***All customers are responsible for taxes and duties incurred on international shipments. For more information regarding taxes and duties, please contact your local customs office.
+                            </em>
+                        </li>
+                        <li>
+                            <u>FedEx International Economy:</u>
+                            <p>
+                                Estimated transit time is 2-5 business days. This service does not provide a guaranteed delivery date. Tracking and insurance provided. Signature option is not available. Package will be left at door step whether or not you are present for delivery.
+                            </p>
+                            <em>
+                                ***All customers are responsible for taxes and duties incurred on international shipments. For more information regarding taxes and duties, please contact your local customs office.
+                            </em>
+                        </li>
+                        <li>
+                            <u>FedEx International Priority:</u>
+                            <p>
+                                Estimated transit time is 1-3 business days depending on destination. This service does not provide a guaranteed delivery date. Tracking and insurance provided. Signature option is not available. Package will be left at door step whether or not you are present for delivery.
+                            </p>
+                            <em>
+                                ***All customers are responsible for taxes and duties incurred on international shipments. For more information regarding taxes and duties, please contact your local customs office.
+                            </em>
+                        </li>
+                    </ul>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>How can I cancel my order?</summary>
+                    <p>
+                        To cancel your order before it is shipped, please email us at info@vhts.com.  Please reference your order number.
+                    </p>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>How can I modify my order?</summary>
+                    <p>
+                        Unfortunately, once an order is placed, we cannot make changes. You will be required to cancel your order and re-order if you require any changes. This includes changes to the style, color, size,  shipping address, etc.  
+                    </p>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Can I combine multiple orders to ship together?</summary>
+                    <p>
+                        Due to prevent processing delays, we unfortunately cannot combine multiple orders to ship together. Once an order is placed, changes cannot be made.
+                    </p>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>What happens if I did not receive my order?</summary>
+                    <p>
+                        If for some reason, you did not receive your order, please contact us via email at info@vhts.com. Customers will be responsible for return shipping costs for all refused and undeliverable packages, as well as, packages sent to an incorrect address.
+                    </p>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>What happens if I did not receive my complete order or my order is damaged?</summary>
+                    <p>
+                        If you are missing an item(s) or an item is damaged, please contact us immediately via email at info@vhts.com. Please do not dispose of the packaging the order came in. You will be required to fill out a claim form and possibly provide photos, so we can investigate further.
+                    </p>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Can I cancel a pre-order item?</summary>
+                    <p>
+                        If you would like to cancel a pre-order, you must cancel on or before the stated deadline. Because pre-order items are made-to-order items, any cancellations made after the deadline may be subject to a cancellation fee of ten (10%) percent of the purchase price.
+                    </p>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>What can cause my order(s) to be modified, placed on hold or canceled?</summary>
+                    <p>
+                        We reserve the right to refuse any order you place with us. At our discretion, we reserve the right to limit or cancel quantities purchased per person, per household or per order. These restrictions may include orders placed by or under the same customer account, the same name, the same credit card, Paypal account, and/or orders that use the same billing and/or shipping address, or orders using a discount code that is not permitted. In the event we make a change to or cancel an order, we will attempt to notify you by contacting the e-mail and/or billing address/phone number provided at the time the order was made. We reserve the right to limit or prohibit orders that, in our sole judgment, appear to be placed by dealers, resellers or distributors.
+                    </p>
+                </details>
+            </li>
+        </ul>
+    </div>
+   <footer>
+        <div>
+            <img src="images/footer_img.png" alt="choosing a drink">
+            <div>
+                <h3>
+                    <small>VERY HARD TO SUBMIT</small>
+                    Join our global community for exclusive benefits and news about
+                </h3>
+                <ul>
+                    <li>New &amp; limited products</li>
+                    <li>Exclusive events</li>
+                    <li>Personalised content</li>
+                    <li>Special offers</li>
+                    <li>Behind the scenes</li>
+                </ul>
+            </div>
+        </div>
+        <div id="sizePopup">
+            <input type="button" value="close" class="material-symbols-outlined closeBtn">
+            <h3>SIZE CHART</h3>
+            <table>
+                <caption>REGULAR</caption>
+                <thead>
+                    <tr>
+                        <th>SIZE</th>
+                        <th>WEIGHT(LBS)</th>
+                        <th>HEIGHT(FT)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>A00</td><td>90 - 105</td><td>4'5" - 5'0"</td></tr>
+                    <tr><td>A1</td><td>105 - 135</td><td>5'0" - 5'5"</td></tr>
+                    <tr><td>A2</td><td>135 - 170</td><td>5'5" - 5'8"</td></tr>
+                    <tr><td>A3</td><td>170 - 190</td><td>5'8" - 6'0"</td></tr>
+                    <tr><td>A0</td><td>190 - 230</td><td>5'11" - 6'2"</td></tr>
+                    <tr><td>A4</td><td>220 - 260</td><td>6'2" - 6'5"</td></tr>
+                    <tr><td>A5</td><td>250 - 280</td><td>6'3" - 6'6"</td></tr>
+                    <tr><td>F1</td><td>105 - 135</td><td>5'0" - 5'5"</td></tr>
+                    <tr><td>F2</td><td>135 - 170</td><td>5'5" - 5'8"</td></tr>
+                    <tr><td>F3</td><td>170 - 190</td><td>5'8" - 6'0"</td></tr>
+                </tbody>
+            </table>
+            <div class="centerGroup">
+                <table>
+                    <caption>FITTED</caption>
+                    <thead>
+                        <tr>
+                            <th>SIZE</th>
+                            <th>WEIGHT(LBS)</th>
+                            <th>HEIGHT(FT)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>A0F</td><td>90 - 115</td><td>5'0" - 5'5"</td></tr>
+                        <tr><td>A1F</td><td>105 - 150</td><td>5'5" - 5'8"</td></tr>
+                        <tr><td>A2F</td><td>140 - 180</td><td>5'7" - 5'11"</td></tr>
+                    </tbody>
+                </table>
+                <table>
+                    <caption>TALL</caption>
+                    <thead>
+                        <tr>
+                            <th>SIZE</th>
+                            <th>WEIGHT(LBS)</th>
+                            <th>HEIGHT(FT)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>A1T</td><td>130 - 175</td><td>5'8" - 6'0"</td></tr>
+                        <tr><td>A2T</td><td>175 - 200</td><td>5'11" - 6'2"</td></tr>
+                        <tr><td>A3T</td><td>195 - 240</td><td>6'2" - 6'5"</td></tr>
+                    </tbody>
+                </table>
+                <table>
+                    <caption>HUSKY</caption>
+                    <thead>
+                        <tr>
+                            <th>SIZE</th>
+                            <th>WEIGHT(LBS)</th>
+                            <th>HEIGHT(FT)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>A0H</td><td>150 - 180</td><td>5'0" - 5'6"</td></tr>
+                        <tr><td>A1H</td><td>180 - 200</td><td>5'5" - 5'8"</td></tr>
+                        <tr><td>A2H</td><td>190 - 235</td><td>5'8" - 6'0"</td></tr>
+                        <tr><td>A3H</td><td>225 - 265</td><td>5'11" - 6'2"</td></tr>
+                    </tbody>
+                </table>
+            </div>            
+            <table>
+                <caption>KID</caption>
+                <thead>
+                    <tr>
+                        <th>SIZE</th>
+                        <th>WEIGHT(LBS)</th>
+                        <th>HEIGHT(FT)</th>
+                        <th>AGE(YRS)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>M00</td><td>35 - 45</td><td>3'1" - 3'4"</td><td>3 - 4</td></tr>
+                    <tr><td>M0</td><td>40 - 55</td><td>3'5" - 3'9"</td><td>4 - 6</td></tr>
+                    <tr><td>M1</td><td>50 - 65</td><td>3'10" - 4'2"</td><td>6 - 8</td></tr>
+                    <tr><td>M2</td><td>60 - 85</td><td>4'2" - 4'7"</td><td>8 - 10</td></tr>
+                    <tr><td>M3</td><td>85 - 100</td><td>4'7" - 4'10"</td><td>10 - 12</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="returnsPopup">
+            <input type="button" value="close" class="material-symbols-outlined closeBtn">
+            <h3>RETURNS</h3>
+            <p>We accept Returns and Exchanges within 20 days after receiving the products. 
+                Returned item must be in unused, unwashed, and clean condition.
+                We provide refund only when the returned item is in sellable condition (unused and unwashed) with an original tag.
+                The refund will take 3 - 4 business days appearing on customer's account. 
+                Please note: with Squarespace's new refund regulation, there will be a 3.2% deduction for any
+                amount of refund inside the US transactions and 4.5% for the international transactions. 
+            </p>
+            <p>
+                When a customer wants to exchange with other item, there will be a $10 exchange fee (plus one way shipping)
+                applied unless the item has a defect or the reason for the exchange occurred following our instruction and guidance.
+                With an exception for first time customers, we can waive the exchange fee. Returning shipping fee is solely dependent upon 
+                customers. 
+            </p>
+            <p>
+                We have to let go a particular customer when returning rate is over 80% and each case based on case by case basis.
+            </p>
+            <p>
+                Lastly, We are not responsible for stolen cases or lost if the recipient’s address does not have the correct information,
+                secure mail room or P.O.Box or whatsover.
+            </p>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <h3>EXPLORE</h3>
+                    <ul>
+                        <li><input type="button" id="sizeBtn" value="size guide" data-popup="sizePopup"></li>
+                        <li><input type="button" id="returnsBtn" value="returns" data-popup="returnsPopup"></li>
+                        <li><a href="stockist.html">stockist</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>HELP</h3>
+                    <ul>
+                        <li><a href="termsofuse.html">terms of use</a></li>
+                        <li><a href="privacypolicy.html">privacy policy</a></li>
+                        <li><a href="cookiepolicy.html">cookie policy</a></li>
+                        <li><a href="FAQ.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>FOLLOW</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/vhtsny/" target="_blank">Instagram</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                </div>
+            </div>    
+            <h2>
+                <img src="images/logo.svg" alt="VHTS">
+            </h2>
+            <div>
+                <form>
+                    <div id="subscribePopup">
+                        <input type="button" value="close" class="material-symbols-outlined deleteBtn">
+                        <strong>Thank you for joining us</strong>
+                        <p>A little welcome confirmation is on its way</p>
+                        <a href="index.html">Go to home page</a>
+                    </div>
+                    <ul>
+                        <li>
+                            <label for="userEmail">Email</label>
+                            <input type="Email" id="userEmail" required>
+                        </li>
+                        <li>
+                            <label for="userFname">First name</label>
+                            <input type="text" id="userFname" required>
+                        </li>
+                        <li>
+                            <label for="userLname">Last name</label>
+                            <input type="text" id="userLname" required>
+                        </li>
+                    </ul>
+                    <p>
+                        I accept that VHTS can contact me via digital communication, including email with personalized marketing of our products and events in 
+                        VHTS shops. Unsubscribing is possible at any time. Details on how 
+                        personal data is processed: <a href="privacypolicy.html">privacy policy.</a>
+                    </p>
+                    <p>
+                        This site is protected by reCAPTCHA and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+                    </p>
+                    <input type="submit" value="Subscribe">
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
