@@ -8908,10 +8908,10 @@ margin-bottom: 35px; overflow: hidden
 }
 .faqContainer ul li summary{
   font-size: 30px; font-weight: 500; list-style: none; cursor: pointer;
-  background: url(../images/icon_plus.png) right center no-repeat; 
+  background: url(../images/icon_add.svg) right center no-repeat; 
 }
 .faqContainer ul li details[open] summary{
-  background: url(../images/icon_minus.png) right center no-repeat;
+  background: url(../images/icon_remove.svg) right center no-repeat;
   margin-bottom: 25px;
 }
 .faqContainer ul li summary ~*{
