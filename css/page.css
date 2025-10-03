@@ -5816,7 +5816,7 @@ margin-bottom: 35px; overflow: hidden
 }
 .faqContainer ul li summary{
   font-size: 30px; font-weight: 500; list-style: none; cursor: pointer;
-  background: url(../images/icon_add.svg) right center no-repeat; background-size: 24px; padding-right: 30px;
+  background: url(../images/icon_add.svg) right center no-repeat; background-size: 24px;; padding-right: 30px;
 }
 .faqContainer ul li details[open] summary{
   background: url(../images/icon_remove.svg) right center no-repeat; background-size: 24px;
